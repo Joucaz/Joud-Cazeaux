@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.joudcazeaux.fr 
+RewriteRule (.*) https://joudcazeaux.fr/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{REQUEST_URI} !
+RewriteRule ^(.*)$ https://www.joudcazeaux.fr/$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^joudcazeaux.fr [NC]
+RewriteCond %{REQUEST_URI} !
+RewriteRule ^(.*)$ https://www.joudcazeaux.fr/$1 [L,R=301,NC]

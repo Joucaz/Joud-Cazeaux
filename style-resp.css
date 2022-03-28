@@ -1,0 +1,898 @@
+@media only screen and (min-device-width:350px) and (max-device-width:767px) and (orientation:portrait){
+    
+    .full{
+        height: auto;
+    }
+    #home{
+        height: 100vh;
+        background:url(images/Fond/FondTelJoudCut.webp) no-repeat ;
+        background-size: cover;
+        /* background-position: bottom; */
+    }
+    .containerScroll-smooth{
+        scroll-snap-align: none;
+    }
+    /* .x-containerScroll{
+        position: relative;
+    
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    }
+    .x-containerScroll-smooth{
+        overflow: auto;
+        width: 100%;
+        scroll-snap-align: start;
+    }    */
+    section h1{
+        animation: none;
+    }
+    section img{
+        display: none;
+        position:absolute;
+        top:0%;
+        left:0%;
+        width:130%;
+        height:130%;
+        pointer-events:none;
+        filter:blur(20px);
+        transition:2s
+    }
+    .titreaccueil{
+        margin-left:0%
+    }
+    #jesuis{
+        color: #e3b405;
+        position: absolute;
+        top: 8%;
+        text-align: center;
+        width:100%;
+        font-size:3.5em;
+    }
+    #quoi{
+        width: 100%;
+        display: inline-block;
+        top:31%;
+        color:#fff;
+        font-size:1.8em;
+        text-align:center;
+    }
+    #quoi2{
+        width: 100%;
+        display: inline-block;
+        top:36%;
+        font-size:1.8em;
+        text-align: center;
+    }
+    
+    #scrollDown{
+        display: none;
+    }
+    #navmenu{
+        display:none!important
+    }
+    #fleche{
+        left:32%
+    }
+    #langue{
+        position:absolute;
+        right: 0;
+        /* height: 100vh; */
+        width: 100%;
+        text-align: center;
+        top: 95vh;
+        bottom: 0;
+    }
+    img.flag{
+        width:40px
+    }
+    #image-fixed{
+        position:absolute;
+        top:.5%;
+        text-align:center;
+        height:5%
+    }
+    .reseaux{
+        width:12%
+    }
+    .reseaux:hover{
+        transform:none
+    }
+    .title-section{
+        height: auto;
+    top: 0;
+    font-size: 30px;
+    }
+    .about-presentation{
+        display:flex;
+        flex-direction:column
+    }
+    .photo-presentation{
+        margin-top:0;
+        width:90%
+    }
+    #dePlus{
+        padding-top: 5%;
+    }
+    .bloc-presentation p{
+        padding: 3%;
+    }
+    .text-presentation{
+        
+        width:93%;
+        font-size:80%;
+    }
+    .dot-container{
+        display:none
+    }
+    .scroll-snap-volley{
+        scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    }
+    .scroll-snap-volley-smooth{
+        scroll-snap-align: start;
+    scroll-behavior:smooth;
+    }
+    .logo{
+        width:40%
+    }
+    #chenois{
+        width:40%
+    }
+    .button-download{
+        padding: 6%;
+    }
+    .button{
+        padding:15px;
+        margin: 1.5%;
+    }
+    .download{
+        padding:10px
+    }
+    .oneskill{
+        margin-bottom: 4%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .oneskill .name{
+        font-size: 1.3em;
+        width: auto;
+    }
+    .oneskill .percent{
+        margin: 1% 5% 1% 5%;
+        width: 90%;
+    }
+    .oneskill .percentP{
+        margin: 1% 5% 1% 5%;
+        width: 90%;
+    }
+    .oneskill .value{
+        font-size: 1.2em;
+        width: auto;
+    }
+    .technical-skill{
+        width: 100%;
+        margin: 0;
+        flex-direction:column;
+        margin-bottom:0
+    }
+    .personal-skill{
+        margin:-10% 5% 12% 5%;
+        /* margin-top: -5%;
+    margin-bottom: 12%; */
+    }
+    #container-personalSkills{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    /* .columnskill{
+        margin-top:7%
+    } */
+    .skillPhoto{
+        width:30%;
+        margin-left:0
+    }
+    .progress-circle{
+        margin:0
+    }
+    .bloc-personal-skill{
+        width:100%
+    }
+    .name-personalSkills{
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+    section h2{
+        font-size:5em;
+        animation:none
+    }
+    /* .img-presentation{
+        content:url(images/Fond/presentationTel.jpg)
+    } */
+    .career-content{
+        margin-top:0;
+        flex-direction:column
+    }
+    .career-column{
+        width:100%
+    }
+    .formation{
+        margin-top: 4%
+    }
+    .experiences{
+        margin-bottom:4%;
+    }
+    .career-infos{
+        padding:1%;
+        width:95%
+    }
+    .sous-titre-career{
+    border-bottom: solid 2px #e3b405;
+    color: #171617;
+    width: 95%;
+    font-size: 1.3em;
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+    }
+    .middle{
+        border:none
+    }
+    .career-photos{
+        height:90px;
+        width:90px
+    }
+    .career-content h3{
+        font-size:.8em
+    }
+    .career-content p{
+        font-size:80%
+    }
+    .formation .career-text{
+        padding-left:0
+    }
+    .formation .career-photos{
+        padding-right:5%
+    }
+    #wrapper{
+        position:relative
+    }
+    #content{
+        padding-left:2.5vw;
+        display:inline-flex;
+        grid-gap:10vw;
+        grid-auto-flow:column;
+        box-sizing:border-box
+    }
+    /* #portfolio{
+        height: 120vh;
+    } */
+    #swipeTel{
+        margin-top: 10%;
+        display: flex;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 600;
+        text-align: center;
+        justify-content: center;
+        animation: second 2s alternate infinite;
+    }
+    ion-icon {
+        color: white;
+        margin: 1%;
+      }
+    /* @keyframes second{
+        0%{
+            font-size:1.2em
+        }
+        80%{
+            font-size:1.4em
+        }
+        100%{
+            font-size:1.4em
+        }
+    } */
+    @keyframes second{
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.15);
+        /* font-size: 1.4em; */
+    }
+    100% {
+        /* font-size: 1.4em; */
+        transform: scale(1.15);
+    }
+}
+    .button-portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .button-portfolio .button{
+        font-size: 1em;
+    margin: 2%;
+    }
+    #items-portfolio{
+        margin-bottom: 20%;
+    }
+    #items-portfolio img{
+        margin-top:3%;
+        width:95vw;
+        /* height:85vw */
+    }
+    #items-portfolio h4{
+        font-size:.9em
+    }
+    #items-portfolio h3{
+        font-size:1em
+    }
+    .one-item{
+        max-width: none;
+    }
+    #prev{
+        display: none;
+        top:105%;
+        left:30%
+    }
+    #next{
+        display: none;
+        top:105%;
+        right:30%
+    }
+    .img-reference{
+        width:100px;
+        height:100px
+    }
+    .sous-titre-contact{
+        margin-top:2%;
+        font-size:1.3em
+    }
+    .contact-content{
+        margin-top:-3%;
+        display:flex;
+        flex-direction:column
+    }
+    .contact-column{
+        width:97%
+    }
+    .name-reference{
+        margin-top:0;
+        font-size:.8em
+    }
+    .references-info p{
+        font-size:.7em
+    }
+    .references-info h4{
+        font-size:.8em
+    }
+    .reseauxContact{
+        width:18%
+    }
+    .reseaux-contact{
+        margin-left:30%
+    }
+    .myContact-img{
+        width:40px;
+        height:40px
+    }
+    .bar-reference{
+        display:none
+    }
+    .contact-oneInfo{
+        margin-top:1%
+    }
+    #sendMessage{
+        margin-top:4%
+    }
+    .contact-oneInfo h4{
+        line-height:3;
+        font-size:.8em
+    }
+    .myContact-info{
+        margin-bottom: 5%;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-device-width:350px) and (max-device-width:767px) and (orientation:landscape){
+    #menu{
+        display:none
+    }
+    section h2{
+        font-size:5em;
+        animation:none
+    }
+    #jesuis{
+        font-size:15vh;
+        width:100%;
+        margin-left:6%
+    }
+    #quoi{
+        position:relative;
+        width:80%;
+        top:25%;
+        color:#fff;
+        font-size:7vh;
+        margin-left:6%;
+        text-align:justify
+    }
+    #quoi2{
+        top:25vh;
+        font-size:7vh;
+        margin-left:6%
+    }
+    #navmenu{
+        display:none!important
+    }
+    #langue{
+        position:absolute;
+        margin-top:3%;
+        top:100%;
+        width:100%;
+        right:0%;
+        text-align:center
+    }
+    img.flag{
+        width:40px
+    }
+    #image-fixed{
+        display:none!important
+    }
+    .title-section{
+        top:-.5%;
+        font-size:30px
+    }
+    .text-presentation{
+        font-size:70%;
+        margin-top:-2%
+    }
+    .dot-container{
+        width:100%
+    }
+    .button{
+        padding:10px
+    }
+    .technical-skill{
+        margin:0
+    }
+    .oneskill .name{
+        font-size:.8em
+    }
+    .oneskill .percent{
+        width:15vw;
+        height:15px
+    }
+    .oneskill .percentP{
+        height:15px
+    }
+    .name-personalSkills{
+        font-size:18px;
+        margin:0
+    }
+    .personal-skill{
+        margin:0;
+        margin-top:5%
+    }
+    .container-personalSkills{
+        height:100%
+    }
+    .sous-titre-career{
+        font-size:1.3em
+    }
+    .career-content{
+        margin-top:0
+    }
+    .career-content h3{
+        font-size:.8em
+    }
+    .career-content p{
+        font-size:80%
+    }
+    .career-photos{
+        height:90px;
+        width:90px
+    }
+    .career-text{
+        padding:0;
+        padding-top:3%
+    }
+    .career-infos{
+        padding-left:0;
+        padding-right:0
+    }
+    .button-portfolio .button{
+        font-size:1em;
+        margin-right:10px;
+        margin-left:10px;
+        margin-top:-20%;
+        width:7.9em
+    }
+    #items-portfolio img{
+        width:150px;
+        height:150px
+    }
+    #items-portfolio h4{
+        font-size:.7em
+    }
+    #items-portfolio h3{
+        font-size:.8em
+    }
+    .sous-titre-contact{
+        margin-top:2%;
+        font-size:1.3em
+    }
+    .img-reference{
+        width:100px;
+        height:100px
+    }
+    .contact-content{
+        margin-top:-2%
+    }
+    .references-info p{
+        font-size:.7em
+    }
+    .references-info h4{
+        font-size:.7em
+    }
+    .references-info h3{
+        font-size:.8em
+    }
+    .info-prof{
+        margin-top:-5%
+    }
+    .myContact-img{
+        width:40px;
+        height:40px
+    }
+    .contact-oneInfo h4{
+        line-height:3;
+        font-size:.8em
+    }
+    #wrapper{
+        width:100%;
+        max-width:300px;
+        position:relative
+    }
+}
+@media only screen and (min-width:650px) and (max-width :850px) and (min-device-width :1300px){
+    .titreaccueil{
+        margin:0;
+        margin-left:4vw
+    }
+    section h2{
+        font-size:10em
+    }
+    @keyframes first{
+        0%{
+            font-size:10em
+        }
+        80%{
+            font-size:11.5em
+        }
+        100%{
+            font-size:11.5em
+        }
+    }
+    #jesuis{
+        position:relative;
+        top:20vh;
+        height:100px;
+        font-size:12vh;
+        color:#e3b405
+    }
+    #quoi{
+        width:70%;
+        top:38vh;
+        font-size:4vh
+    }
+    #quoi2{
+        top:39vh;
+        font-size:4vh
+    }
+    #navmenu{
+        width:100%
+    }
+    ul li{
+        font-size:2vh;
+        line-height:3.5
+    }
+    #me{
+        position:relative;
+        left:50vh;
+        width:50%;
+        margin-top:0%;
+        top:24.5vh
+    }
+    .reseaux{
+        width:4.5%;
+        transition:all 1s
+    }
+    .reseaux:hover{
+        transform:translateY(-15px)
+    }
+    .text-presentation{
+        width:97%;
+        margin-top:10%;
+        font-size:17px
+    }
+    .photo-presentation{
+        margin-top:17%;
+        height:50%;
+        width:70%;
+        text-align:center
+    }
+    .slideshow-container{
+        max-width:300px
+    }
+    .dot-container{
+        width:100%
+    }
+    .logo{
+        margin-top:-2%;
+        width:40%
+    }
+    .title-section{
+        font-size:35px
+    }
+    #chenois{
+        width:25%
+    }
+    .oneskill .percent{
+        width:20vw
+    }
+    .button-download{
+        margin-top:4%
+    }
+    .img-presentation{
+        content:url(images/Fond/presentationTel.jpg)
+    }
+    .technical-skill{
+        margin-top:15%
+    }
+    .bloc-personal-skill{
+        width:20%
+    }
+    .middle{
+        margin-top:10%
+    }
+    .career-column{
+        margin-top:7%
+    }
+    .career-infos{
+        padding:2%;
+        margin-top:20%
+    }
+    .career-text{
+        padding:2%
+    }
+    .sous-titre-career{
+        font-size:2em
+    }
+    .career-content h3{
+        font-size:1em
+    }
+    .career-content p{
+        font-size:100%
+    }
+    .career-photos{
+        height:110px
+    }
+    .button-portfolio .button{
+        font-size:1.5em;
+        margin-right:10px;
+        margin-left:10px;
+        width:7em
+    }
+    .button-portfolio{
+        margin-top:5%;
+        margin-bottom:5%
+    }
+    #items-portfolio img{
+        width:230px;
+        height:230px
+    }
+    .portfolio-text{
+        height:40%;
+        font-size:.8em
+    }
+    .img-reference{
+        width:135px;
+        height:135px;
+        margin-top:30%
+    }
+    .sous-titre-contact{
+        margin-top:5%;
+        font-size:2em
+    }
+    .references-info p{
+        font-size:.9em
+    }
+    .references-info h4{
+        font-size:.9em
+    }
+    .reseauxContact{
+        width:25%
+    }
+    .reseaux-contact{
+        margin-left:15%
+    }
+    .myContact-img{
+        width:20%
+    }
+}
+@media only screen and (min-width :850px) and (max-width :1300px) and (min-device-width :1300px){
+    #jesuis{
+        position:relative;
+        top:20vh;
+        height:100px;
+        font-size:13vh;
+        color:#e3b405
+    }
+    #quoi{
+        width:65%;
+        top:40vh;
+        font-size:4.5vh
+    }
+    #quoi2{
+        top:41vh;
+        font-size:4.5vh
+    }
+    ul li{
+        font-size:2.3vh;
+        line-height:3
+    }
+    .bloc-presentation p{
+        font-size:100%;
+        padding:3%
+    }
+    .reseaux{
+        width:4.85%
+    }
+    .dot-container{
+        width:100%;
+        text-align:center
+    }
+    .photo-presentation{
+        width:40%;
+        margin-top:10%
+    }
+    .text-presentation{
+        margin-top:8%
+    }
+    .technical-skill{
+        margin-top:9%
+    }
+    
+    .career-photos{
+        height:130px
+    }
+    .button-portfolio{
+        margin-top:4%;
+        margin-bottom:4%
+    }
+    .button-portfolio .button{
+        font-size:1.5em;
+        margin-right:10px;
+        margin-left:10px;
+        width:9em
+    }
+    .portfolio-text{
+        height:40%;
+        font-size:.8em
+    }
+    .img-reference{
+        width:160px;
+        height:160px
+    }
+    #items-portfolio img{
+        width:260px;
+        height:260px
+    }
+}
+@media only screen and (min-device-height:1250px) and (min-device-width:1200px){
+    #jesuis{
+        position:relative;
+        top:20vh;
+        height:100px;
+        font-size:8em;
+        color:#e3b405
+    }
+    #quoi{
+        width:55%;
+        top:40vh
+    }
+    #quoi2{
+        top:41vh
+    }
+    ul li{
+        font-size:3vh
+    }
+    .JC{
+        width:125px
+    }
+    #langue{
+        top:2.2%
+    }
+    img.flag{
+        width:40px
+    }
+    .mySlides img{
+        vertical-align:middle
+    }
+    .slideshow-container{
+        max-width:100%
+    }
+    .photo-presentation{
+        margin-top:13%;
+        width:40%
+    }
+    .dot-container{
+        width:100%
+    }
+    .text-presentation{
+        margin-top:10%;
+        font-size:150%
+    }
+    .logo{
+        width:50%
+    }
+    #chenois{
+        width:35%
+    }
+    .skill-content{
+        margin-top:5%
+    }
+    .skillPhoto{
+        width:120%
+    }
+    .career-infos{
+        margin-top:10%;
+        padding-left:1%;
+        padding-right:1%
+    }
+    .career-content h3{
+        font-size:1.5em
+    }
+    .career-content p{
+        font-size:1.5em
+    }
+    .button-portfolio{
+        margin-top:3%
+    }
+    #items-portfolio{
+        margin-top:8%
+    }
+    #items-portfolio img{
+        width:400px;
+        height:400px
+    }
+    #items-portfolio h3{
+        font-size:1.5em
+    }
+    #items-portfolio h4{
+        font-size:1.5em
+    }
+    .references-info{
+        margin-top:13%
+    }
+    .img-reference{
+        width:230px;
+        height:230px
+    }
+    .textRef{
+        font-size:1.3em
+    }
+    .contact-oneInfo h4{
+        font-size:1.5em
+    }
+    .myContact-img{
+        width:100px;
+        height:100px
+    }
+}
