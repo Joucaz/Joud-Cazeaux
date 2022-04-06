@@ -98,12 +98,12 @@ function typing() {
     
     
     if (urlcourante.match('/en/')) {
-        var textQuoi1 = "Programmer"
-        var textQuoi2 = "Profesionnal Athlete"
+        var textQuoi1 = "Developer"
+        var textQuoi2 = "Athlete"
     } 
     else if (urlcourante.match('/fr/')) {
         var textQuoi1 = "Développeur"
-        var textQuoi2 = "Athlète Professionnel"
+        var textQuoi2 = "Athlète"
     }
     
     

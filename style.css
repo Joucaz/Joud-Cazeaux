@@ -607,6 +607,9 @@ section h1:hover~#quoi2{
     text-decoration:none;
     color:#1A1E23
 }
+#chenoislink{
+
+}
 #chenoislink:hover{
     transition:0.4s;
     color:#e3b405!important
@@ -1061,7 +1064,7 @@ section h1:hover~#quoi2{
     display:flex;
     flex-direction:row;
     margin:1%;
-    margin-top:5%
+    margin-top:2%
 }
 .info-prof{
     display:flex;
