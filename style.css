@@ -966,7 +966,9 @@ section h1:hover~#quoi2{
     border-radius:3%
 }
 .portfolio-img{
-    transition:all .5s
+    transition:all .5s;
+}
+.portfolio-img:hover{
 }
 .portfolio-text{
     text-align:center;

@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log("Hi, Welcome !"); 
     // window.location.hash = 'presentation'; 
     // visible();
-  
-    
+
     isVisible();
     presentationBlur();
     portfolioCarousel(); 
@@ -42,8 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
 //         console.log("not")
 // }
 
-
-    
 
 
 function isVisible(){
