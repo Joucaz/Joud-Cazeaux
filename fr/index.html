@@ -459,7 +459,7 @@
 <!-- ----------------------- Page 5 Portfolio ----------------------- -->
 
         <div id="portfolio" class="containerScroll-smooth page full">
-            <div class="portfolio-page full">
+            <div id="portfolioPage" class="portfolio-page full">
                 <h2 class="title-section" id="title-portfolio">PORTFOLIO</h2>
                  <div class="portfolio-content">
                      <div class="button-portfolio fade" id="button-portfolio">
@@ -499,7 +499,8 @@
                                 
                                 <div class="x-containerScroll-smooth one-item all website">
                                     <div class="image-portfolio">
-                                        <a href="https://www.schedulejs.com/" target="_blank">
+                                        <!-- <a href="https://www.schedulejs.com/" target="_blank"> -->
+                                        <a href="#popupSJS">
                                             <img src="../images/Portfolio/ScheduleJS.webp" class="portfolio-img" id="schedulejs" alt="Site Web Pour ScheduleJS">
                                            <div class="portfolio-text">
                                                <br>
@@ -514,9 +515,11 @@
                  
                  
                                  </div>
+
+
                                  <div class="x-containerScroll-smooth one-item all website personal">
                                     <div class="image-portfolio">
-                                        <a href="https://joucaz.joudcazeaux.fr" target="_blank">
+                                        <a href="#popupJoucaz">
                                             <img src="../images/Portfolio/Joucaz.webp" class="portfolio-img" id="joucaz" alt="Joucaz">        
                                             <div class="portfolio-text">
                                                <br>
@@ -531,7 +534,8 @@
                                 </div>
                                 <div class="x-containerScroll-smooth one-item all game">
                                     <div class="image-portfolio">
-                                        <a href="../videos/GAME4J - Joud&Remy.mp4" target="_blank">
+                                        <a href="#popupGame4J">
+                                        <!-- <a href="../videos/GAME4J - Joud&Remy.mp4" target="_blank"> -->
                                             <img src="../images/Portfolio/GAME4J.webp" class="portfolio-img" id="game4j" alt="Game Java - Joud & Rémy">
                                             <div class="portfolio-text">
                                                 <br>
@@ -547,7 +551,7 @@
                                 </div>
                                  <div class="x-containerScroll-smooth one-item all website">
                                     <div class="image-portfolio">
-                                        <a href="http://andertetcondon.fr/wp-v2/" target="_blank">
+                                        <a href="#popupAndertEtCondon">
                                             <img src="../images/Portfolio/andert-et-condon-low.webp" class="portfolio-img" id="andertetcondon" alt="Site web andertetcondon">
                                            <div class="portfolio-text">
                                                <br>
@@ -565,7 +569,8 @@
                                  
                                  <div class="x-containerScroll-smooth one-item all game">
                                     <div class="image-portfolio">
-                                        <a href="../videos/Battle-Shooter.mp4" target="_blank">
+                                        <a href="#popupBattleShooter">
+                                        <!-- <a href="../videos/Battle-Shooter.mp4" target="_blank"> -->
                                             <img src="../images/Portfolio/battle-shooter.webp" class="portfolio-img" id="battleshooter" alt="Jeu Battle Shooter">
                                            <div class="portfolio-text">
                                                <br>
@@ -609,6 +614,151 @@
                             </button>
                             <div id="swipeTel"><ion-icon name="arrow-back-outline"></ion-icon> Swipe pour en voir plus ! <ion-icon name="arrow-forward-outline"></ion-icon></div>
                           </div>
+
+                          
+                        <div id="popupSJS" class="overlay">
+                            <div class="popup">
+                                <h2>ScheduleJS</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <div class="flex-popup">
+                                        <div class="left-popup">
+                                            <img src="../images/Portfolio/ScheduleJS.webp" alt="">
+                                        </div>
+                                        <div class="right-popup">
+                                            ScheduleJS est un produit développé par l'entreprise AISO pour permettre à ses clients de gérer plus facilement des très gros plannings.
+                                            <br><br>
+                                            Je me suis chargé de promouvoir le produit à travers un site complet développé avec WordPress.
+                                            <br><br>
+                                            Ce travail était dans le cadre d'un stage de fin d'étude d'IUT Informatique.
+                                            <br><br><br>
+                                            <div class="centerPop">
+                                                <strong>WordPress </strong>  |  <strong>BAC+2</strong>  |  <strong>2021</strong>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="https://www.schedulejs.com/" target="_blank">
+                                        <button class="button" style="text-decoration: none; font-size: 1em;">ScheduleJS.com</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="popupJoucaz" class="overlay">
+                            <div class="popup">
+                                <h2>Joucaz</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <div class="flex-popup">
+                                        <div class="left-popup">
+                                            <img src="../images/Portfolio/Joucaz.webp" alt="">
+                                        </div>
+                                        <div class="right-popup">
+                                            Création d'un site web montrant toutes mes réalisations 2D et 3D.
+                                            <br><br>
+                                            Je réalise des pack de stream Twitch pour certains streamers afin qu'il ait une réelle identité graphique. Je réalise également des logos.                            
+                                            <br><br><br>
+                                            <div class="centerPop">
+                                                <strong>After Effects</strong>  |  <strong>Photoshop</strong>  |  <strong>Illustrator</strong>  |  <strong>Blender</strong>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="https://joucaz.joudcazeaux.fr" target="_blank">
+                                        <button class="button" style="text-decoration: none; font-size: 1em;">Joucaz.fr</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="popupGame4J" class="overlay">
+                            <div class="popup">
+                                <h2>GAME4J - Joud & Rémy</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <div class="flex-popup">
+                                        <div class="left-popup">
+                                            <video width="310" controls autoplay>
+                                                <source src="../videos/GAME4J - Joud&Remy.mp4" type="video/mp4">
+                                                Votre navigateur ne prend pas en charge la vidéo HTML.
+                                              </video>                                        
+                                        </div>
+                                        <div class="right-popup">
+                                            Le but du jeu est d'arriver à la maison en bas à droite sans se prendre d'obstacles (arbres, rochers) qui font perdre -10 de vie et les bonus (viandes, fruits) font gagner 10 de vie.
+                                            <br><br>
+                                            Différentes fonctionnalités : voir le meilleur chemin en terme de distance et d'énergie (Dijkstra), sauvegarder et reprendre une partie plus tard, voir le replay des parties gagnées, voir la boucle lors d'un passage sur une case déja visité.
+                                            <br><br>
+                                            Ce travail fut réalisé dans le cadre d'un projet en première année d'école d'ingénieur à CY Tech (ex-EISTI).
+                                            <br><br>
+                                            <div class="centerPop">
+                                                <strong>Java</strong>  |  <strong>Swing</strong>  |  <strong>BAC+3</strong>  |  <strong>2022</strong>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- <a href="https://www.schedulejs.com/" target="_blank">
+                                        <button class="button" style="text-decoration: none; font-size: 1em;">ScheduleJS.com</button>
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div id="popupAndertEtCondon" class="overlay">
+                            <div class="popup">
+                                <h2>Andert-et-Condon</h2>
+                                <a class="close closeAndert" href="#">&times;</a>
+                                <div class="content">
+                                    <div class="flex-popup">
+                                        <div class="left-popup">
+                                            <img src="../images/Portfolio/andert-et-condon-low.webp" alt="">
+                                        </div>
+                                        <div class="right-popup">
+                                            Le but de ce projet était de réaliser un site web pour une entreprise afin de se professionaliser.
+                                            <br><br>
+                                            Nous étions un groupe de 5 personnes, et nous nous sommes chargés de la refonte totale du site web de la commune d'Andert-et-Condon.
+                                            <br><br>
+                                            Ce travail était dans le cadre d'un projet en deuxième année d'IUT Informatique.
+                                            <br><br><br>
+                                            <div class="centerPop">
+                                                <strong>WordPress </strong>  |  <strong>BAC+2</strong>  |  <strong>2021</strong>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="http://andertetcondon.fr/wp-v2/" target="_blank">
+                                        <button class="button" style="text-decoration: none; font-size: 1em;">Andertetcondon.fr</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="popupBattleShooter" class="overlay">
+                            <div class="popup">
+                                <h2>Battle Shooter</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <div class="flex-popup">
+                                        <div class="left-popup" style="margin-top: 3%;">
+                                            <video width="400" controls autoplay>
+                                                <source src="../videos/Battle-Shooter.mp4" type="video/mp4">
+                                                Votre navigateur ne prend pas en charge la vidéo HTML.
+                                              </video>                                        
+                                        </div>
+                                        <div class="right-popup">
+                                            Nous devions développer un jeu en version graphique par groupe de 4 personnes.
+                                            <br><br>
+                                            Le but de ce jeu est de tuer son adversaire en lançant des boules de feu et des boules d'eau pour lui enlver le plus de vie possible.
+                                            <br><br>
+                                            Ce travail était dans le cadre d'un projet en première année d'IUT Informatique.
+                                            <br><br><br>
+                                            <div class="centerPop">
+                                                <strong>C</strong>  |  <strong>SFML</strong>  |  <strong>BAC+1</strong>  |  <strong>2020</strong>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
                         <!-- <div class="one-item all website personal">
                             <div class="image-portfolio" >
                                 <a href="#home" onclick="clickPage()">
@@ -789,6 +939,7 @@ selector.forEach(function(item) {
 
     </script>
      <script src="../main.js"></script>
+
     
 </body>
 </html>
