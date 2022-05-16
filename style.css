@@ -337,7 +337,7 @@ section h1:hover~img{
 }
 #portfolio{
     background-color:#171617;
-    overflow:hidden
+    overflow:hidden;
 }
 #contact{
     background-color:#fff;
@@ -945,7 +945,7 @@ section h1:hover~#quoi2{
     max-width: 310px;
     justify-content: center;
 }
-#items-portfolio img{
+.image-portfolio img{
     border-radius:3%;
     width:310px;
     height:310px;
@@ -1076,6 +1076,7 @@ section h1:hover~#quoi2{
   }
   
   .popup {
+    
     text-align: center;
     border: solid 7px;
     color: #fff;
@@ -1125,6 +1126,14 @@ section h1:hover~#quoi2{
     flex-direction: row;
     justify-content: space-around;
   }
+  .imgPopup{
+    width: 310px;
+    height: 310px;
+    border-radius: 3%;
+}
+.popup video{
+    width: 310px;
+}
 
   /* END PORTFOLIO POPUP */
 

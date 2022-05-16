@@ -320,7 +320,7 @@
     #items-portfolio{
         margin-bottom: 20%;
     }
-    #items-portfolio img{
+    #image-portfolio img{
         margin-top:3%;
         width:95vw;
         /* height:85vw */
@@ -395,6 +395,36 @@
     }
     .myContact-info{
         margin-bottom: 5%;
+    }
+    .overlay{
+        position: absolute;
+        height: 150%;
+        top: -30%;
+    }
+    .popup{
+        max-width: 80%;
+        height: 75%;
+        width: 80%;
+    }
+    .flex-popup{
+        flex-direction: column;
+    }
+    .imgPopup{
+        width: -webkit-fill-available;
+        height: 60vw;
+    }
+    .popup .button {
+        margin-bottom: 3%;
+    }
+    .popup .content{
+        max-height: 90%;
+    }
+    .popup video{
+        width: -webkit-fill-available;
+    }
+    .popup .close{
+        top: 8px;
+        font-size: 40px;
     }
 }
 
