@@ -166,6 +166,7 @@ function menuSection() {
         facebook.src = "../images/Reseaux/facebookblanc.png"
         linkedin.src = "../images/Reseaux/linkedinblanc.png"
         mail.src = "../images/Reseaux/mailblanc.png"
+        github.src = "../images/Reseaux/github.png"
         // network.classList.add("animated")
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
@@ -187,6 +188,7 @@ function menuSection() {
         facebook.src = "../images/Reseaux/facebooknoir.png"
         linkedin.src = "../images/Reseaux/linkedinnoir.png"
         mail.src = "../images/Reseaux/mailnoir.png"
+        github.src = "../images/Reseaux/githubNoir.png"
         // network.style.display = "block"
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
@@ -204,6 +206,7 @@ function menuSection() {
         facebook.src = "../images/Reseaux/facebookblanc.png"
         linkedin.src = "../images/Reseaux/linkedinblanc.png"
         mail.src = "../images/Reseaux/mailblanc.png"
+        github.src = "../images/Reseaux/github.png"
         
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
@@ -221,6 +224,7 @@ function menuSection() {
         facebook.src = "../images/Reseaux/facebooknoir.png"
         linkedin.src = "../images/Reseaux/linkedinnoir.png"
         mail.src = "../images/Reseaux/mailnoir.png"
+        github.src = "../images/Reseaux/githubNoir.png"
         
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
@@ -239,6 +243,7 @@ function menuSection() {
         facebook.src = "../images/Reseaux/facebookblanc.png"
         linkedin.src = "../images/Reseaux/linkedinblanc.png"
         mail.src = "../images/Reseaux/mailblanc.png"
+        github.src = "../images/Reseaux/github.png"
         
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
@@ -257,6 +262,7 @@ function menuSection() {
         facebook.src = "../images/Reseaux/facebooknoir.png"
         linkedin.src = "../images/Reseaux/linkedinnoir.png"
         mail.src = "../images/Reseaux/mailnoir.png"
+        github.src = "../images/Reseaux/githubNoir.png"
         
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
