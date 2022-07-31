@@ -478,6 +478,9 @@
                         <div class="button-websites">
                             <button class="button button-filter" data-rel="website" style="text-decoration: none;">Websites</button>
                         </div>
+                        <div class="button-3d">
+                            <button class="button button-filter" data-rel="graphism" style="text-decoration: none;">2D / 3D</button>
+                        </div>
                         <div class="button-games">
                             <button class="button button-filter" data-rel="game" style="text-decoration: none;">Games</button>
                         </div>
@@ -523,8 +526,27 @@
 
 
                                     </div>
+
+                                    <div class="x-containerScroll-smooth one-item all graphism">
+                                        <div class="image-portfolio">
+                                            <a href="#popupICON">
+                                                <img src="../images/Portfolio/Icon-Portfolio.webp" class="portfolio-img" id="icon" alt="3D ICON Photonics">
+                                               <div class="portfolio-text">
+                                                   <br>
+                                                   <strong>2022</strong><br>Design 3D<br>ICON Photonics
+                                               </div>
+                                            </a>
+                                           
+                                        </div>
+                                         
+                                         <h3>ICON Photonics</h3>
+                                         <h4>Creation of 3D animated images and videos</h4>
+                     
+                     
+                                     </div>
+    
                                     
-                                    <div class="x-containerScroll-smooth one-item all website personal">
+                                    <div class="x-containerScroll-smooth one-item all website graphism personal">
                                         <div class="image-portfolio">
                                             <a href="#popupJoucaz">
                                                 <img src="../images/Portfolio/Joucaz.webp" class="portfolio-img" id="joucaz" alt="Joucaz">
@@ -637,13 +659,45 @@
                                             This work was made for an internship to validate my IUT in Computer Science.
                                             <br><br><br>
                                             <div class="centerPop">
-                                                <strong>WordPress </strong>  |  <strong>BAC+2</strong>  |  <strong>2021</strong>
+                                                <strong>WordPress</strong>  |  <strong>BAC+2</strong>  |  <strong>2021</strong>
                                             </div>
 
                                         </div>
                                     </div>
                                     <a href="https://www.schedulejs.com/" target="_blank">
                                         <button class="button" style="text-decoration: none; font-size: 1em;">ScheduleJS.com</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="popupICON" class="overlay">
+                            <div class="popup">
+                                <h2>ICON Photonics</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <div class="flex-popup">
+                                        <div class="left-popup">
+                                            <video loop autoplay controls>
+                                                <source src="../videos/Icon Photonics presentation.mp4" autoplay loop type="video/mp4">
+                                                Your browser does not support HTML video.
+                                              </video>  
+                                        </div>
+                                        <div class="right-popup">
+                                            ICON Photonics offers optical coupling solutions for high-speed communication.
+                                            <br><br>
+                                            I was in charge of all the 3D modeling part, especially for photo or video rendering. 
+                                            I realized several dozens of creations allowing to have a model for each component realizable by the company. 
+                                            <br><br>
+                                            This work was part of a first year internship in engineering.
+                                            <br><br><br>
+                                            <div class="centerPop">
+                                                <strong>Blender</strong>  |  <strong>BAC+3</strong>  |  <strong>2022</strong>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <a href="../icon/iconPage.html" target="_blank">
+                                        <button class="button" style="text-decoration: none; font-size: 1em;">Discover all my work !</button>
                                     </a>
                                 </div>
                             </div>
@@ -722,7 +776,7 @@
                                             This work was made for a project in second year of my IUT in Computer Science.
                                             <br><br><br>
                                             <div class="centerPop">
-                                                <strong>WordPress </strong>  |  <strong>BAC+2</strong>  |  <strong>2021</strong>
+                                                <strong>WordPress</strong>  |  <strong>BAC+2</strong>  |  <strong>2021</strong>
                                             </div>
 
                                         </div>
@@ -842,7 +896,16 @@
             <h2 class="title-section" id="title-contact">CONTACT</h2>
             <div class="contact-content">
                 <div class="references contact-column">
-                    <h2 style="text-align: center;" class="sous-titre-contact">References</h2>
+
+                    <form method="post" action="../mail.php" class="form-contact">      
+                        <input name="name" type="text" required class="feedback-input" placeholder="Name" />   
+                        <input name="email" type="text" required class="feedback-input" placeholder="Email" />
+                        <input name="subject" type="text" required class="feedback-input" placeholder="Subject" />
+                        <textarea name="text" required class="feedback-input" placeholder="Your message"></textarea>
+                        <input type="submit" value="SEND"/>
+                      </form>
+
+                    <!-- <h2 style="text-align: center;" class="sous-titre-contact">References</h2>
                     <div class="references-info ">
                         <a href="https://www.linkedin.com/in/luc-damas-0b67731/" target="_blank"><img src="../images/References/lucdamas.webp" class="img-reference slideLeftPetit fade" alt="Luc Damas"></a>
                         <div class="info-prof fade">
@@ -871,9 +934,9 @@
                             </a>
 
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="bar-reference"></div>
+                <!-- <div class="bar-reference"></div> -->
                 <div class="myContact contact-column">
                     <h2 style="text-align: center;" class="sous-titre-contact">Follow me!</h2>
                     <div class="fade myContact-info">

@@ -12,6 +12,7 @@
     <meta name="description" content="Développeur &amp; ancien athlète professionnel basé sur Paris et Genève. Artiste indépendant dans le monde entier. Je vous présente ici mon parcours accompagné de plusieurs informations permettant de me connaître." />
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../style-resp.css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -183,6 +184,8 @@
             <div id="aboutContent" class="about-content full">
                  <h2 class="title-section">À PROPOS DE MOI</h2>
                  <div id="about-presentation" class="about-presentation">
+                    
+                    
                     <div class="fade bloc-presentation photo-presentation">
                         <div class="slideshow-container scroll-snap-volley">
 
@@ -486,6 +489,9 @@
                         <div class="button-websites">
                             <button class="button button-filter" data-rel="website" style="text-decoration: none;">Sites Web</button>
                         </div>
+                        <div class="button-3d">
+                            <button class="button button-filter" data-rel="graphism" style="text-decoration: none;">2D / 3D</button>
+                        </div>
                         <div class="button-games">
                             <button class="button button-filter" data-rel="game" style="text-decoration: none;">Jeux</button>
                         </div>
@@ -533,8 +539,27 @@
                  
                                  </div>
 
+                                 <div class="x-containerScroll-smooth one-item all graphism">
+                                    <div class="image-portfolio">
+                                        <!-- <a href="https://www.schedulejs.com/" target="_blank"> -->
+                                        <a href="#popupICON">
+                                            <img src="../images/Portfolio/Icon-Portfolio.webp" class="portfolio-img" id="icon" alt="3D ICON Photonics">
+                                           <div class="portfolio-text">
+                                               <br>
+                                               <strong>2022</strong><br>Design 3D<br>ICON Photonics
+                                           </div>
+                                        </a>
+                                       
+                                    </div>
+                                     
+                                     <h3>ICON Photonics</h3>
+                                     <h4>Création d'images et vidéos animés en 3D</h4>
+                 
+                 
+                                 </div>
 
-                                 <div class="x-containerScroll-smooth one-item all website personal">
+
+                                 <div class="x-containerScroll-smooth one-item all website graphism personal">
                                     <div class="image-portfolio">
                                         <a href="#popupJoucaz">
                                             <img src="../images/Portfolio/Joucaz.webp" class="portfolio-img" id="joucaz" alt="Joucaz">        
@@ -650,13 +675,46 @@
                                             Ce travail était dans le cadre d'un stage de fin d'étude d'IUT Informatique.
                                             <br><br><br>
                                             <div class="centerPop">
-                                                <strong>WordPress </strong>  |  <strong>BAC+2</strong>  |  <strong>2021</strong>
+                                                <strong>WordPress</strong>  |  <strong>BAC+2</strong>  |  <strong>2021</strong>
+                                            </div>
+
+                                        </div>
+                                        
+                                    </div>
+                                    <a href="https://www.schedulejs.com/" target="_blank">
+                                        <button class="button" style="text-decoration: none; font-size: 1em;">ScheduleJS.com</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="popupICON" class="overlay">
+                            <div class="popup">
+                                <h2>ICON Photonics</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <div class="flex-popup">
+                                        <div class="left-popup">
+                                            <video loop autoplay controls>
+                                                <source src="../videos/Icon Photonics presentation.mp4" autoplay loop type="video/mp4">
+                                                Votre navigateur ne prend pas en charge la vidéo HTML.
+                                              </video>  
+                                        </div>
+                                        <div class="right-popup">
+                                            ICON Photonics proposent des solutions de couplage optiques permettant la communication à haut débit.
+                                            <br><br>
+                                            Je me suis chargé de toute la partie modélisation 3D, que cela soit pour des rendus photos, ou vidéos. 
+                                            J'ai réalisé plusieurs dizaines de créations permettant d'avoir une modélisation pour chaque composants réalisables par l'entreprise. 
+                                            <br><br>
+                                            Ce travail était dans le cadre d'un stage de première année de cycle d'Ingénieur.
+                                            <br><br><br>
+                                            <div class="centerPop">
+                                                <strong>Blender</strong>  |  <strong>BAC+3</strong>  |  <strong>2022</strong>
                                             </div>
 
                                         </div>
                                     </div>
-                                    <a href="https://www.schedulejs.com/" target="_blank">
-                                        <button class="button" style="text-decoration: none; font-size: 1em;">ScheduleJS.com</button>
+                                    <a href="../icon/iconPage.html" target="_blank">
+                                        <button class="button" style="text-decoration: none; font-size: 1em;">Découvre tout mon travail !</button>
                                     </a>
                                 </div>
                             </div>
@@ -694,8 +752,8 @@
                                 <div class="content">
                                     <div class="flex-popup">
                                         <div class="left-popup">
-                                            <video autoplay controls>
-                                                <source src="../videos/GAME4J - Joud&Remy.mp4" type="video/mp4">
+                                            <video loop autoplay controls>
+                                                <source src="../videos/GAME4J - Joud&Remy.mp4" autoplay loop type="video/mp4">
                                                 Votre navigateur ne prend pas en charge la vidéo HTML.
                                               </video>                                        
                                         </div>
@@ -735,7 +793,7 @@
                                             Ce travail était dans le cadre d'un projet en deuxième année d'IUT Informatique.
                                             <br><br><br>
                                             <div class="centerPop">
-                                                <strong>WordPress </strong>  |  <strong>BAC+2</strong>  |  <strong>2021</strong>
+                                                <strong>WordPress</strong>  |  <strong>BAC+2</strong>  |  <strong>2021</strong>
                                             </div>
 
                                         </div>
@@ -754,8 +812,8 @@
                                 <div class="content">
                                     <div class="flex-popup">
                                         <div class="left-popup" style="margin-top: 3%;">
-                                            <video autoplay controls>
-                                                <source src="../videos/Battle-Shooter.mp4" type="video/mp4">
+                                            <video loop autoplay controls>
+                                                <source src="../videos/Battle-Shooter.mp4" autoplay loop type="video/mp4">
                                                 Votre navigateur ne prend pas en charge la vidéo HTML.
                                               </video>                                        
                                         </div>
@@ -837,8 +895,17 @@
                 <h2 class="title-section" id="title-contact">ME CONTACTER</h2>
                  <div class="contact-content">
                      <div class="references contact-column">
-                        <h2 style="text-align: center;" class="sous-titre-contact">Réferences</h2>
-                        <div class="references-info ">
+                        <!-- <h2 style="text-align: center;" class="sous-titre-contact">Réferences</h2> -->
+
+                        <form method="post" action="../mail.php" class="form-contact">      
+                            <input name="name" type="text" required class="feedback-input" placeholder="Nom" />   
+                            <input name="email" type="text" required class="feedback-input" placeholder="Email" />
+                            <input name="subject" type="text" required class="feedback-input" placeholder="Sujet" />
+                            <textarea name="text" required class="feedback-input" placeholder="Votre message"></textarea>
+                            <input type="submit" value="ENVOYER"/>
+                          </form>
+
+                        <!-- <div class="references-info ">
                             <a href="https://www.linkedin.com/in/luc-damas-0b67731/" target="_blank"><img src="../images/References/lucdamas.webp" class="img-reference slideLeftPetit fade" alt="Luc Damas"></a>  
                             <div class="info-prof fade"> 
                                 <h3 class="textRef name-reference">Luc DAMAS</h3>
@@ -866,9 +933,9 @@
                                 </a>
                             
                             </div>
-                        </div>
+                        </div> -->
                      </div>
-                     <div class="bar-reference"></div>
+                     <!-- <div class="bar-reference"></div> -->
                      <div class="myContact contact-column">
                         <h2 style="text-align: center;" class="sous-titre-contact">Suivez moi !</h2>
                         <div class="fade myContact-info">

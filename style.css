@@ -920,8 +920,8 @@ section h1:hover~#quoi2{
 }
 .button-portfolio .button{
     font-size:1.5em;
-    margin-right:50px;
-    margin-left:50px;
+    margin-right:10px;
+    margin-left:10px;
     width:10em;
     text-align:center
 }
@@ -1136,6 +1136,56 @@ section h1:hover~#quoi2{
 }
 
   /* END PORTFOLIO POPUP */
+
+  /*CONTACT*/
+.form-contact{
+    margin-top: 5%;
+}
+  
+.feedback-input {
+    color:#171617;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #171617;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid #e3b405; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 30%;
+    background:#e3b405;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:#171617; }
 
 
 .item{
