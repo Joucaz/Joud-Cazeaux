@@ -242,10 +242,10 @@
                         <div class="fade">
                         <h2>Hi!</h2>
                         <p>
-                            I'm a first-year student of engineering program in <strong>computer science</strong> at 
+                            I'm a second-year student of engineering program in <strong>computer science</strong> at 
                             <a id="chenoislink" class="link" href="https://cytech.cyu.fr/"
                                 target="_blank"><strong>CY Tech (ex-EISTI)</strong></a>
-                                 with a strong passion and interest for development.
+                                 with a strong passion and interest for development, animation and 3D modeling.
                         </p>
                        
                         <a href="https://cytech.cyu.fr/" style="text-decoration:none" target="_blank">
@@ -903,14 +903,20 @@
             <h2 class="title-section" id="title-contact">CONTACT</h2>
             <div class="contact-content">
                 <div class="references contact-column">
-
-                    <form method="post" action="../mail.php" class="form-contact">      
+                   
+                    <iframe name="votar" style="display:none;"></iframe>
+                    <form name="formContact" id="formContact" method="post" action="../mail.php" class="form-contact" target="votar">      
                         <input name="name" type="text" required class="feedback-input" placeholder="Name" />   
                         <input name="email" type="text" required class="feedback-input" placeholder="Email" />
                         <input name="subject" type="text" required class="feedback-input" placeholder="Subject" />
                         <textarea name="text" required class="feedback-input" placeholder="Your message"></textarea>
-                        <input type="submit" value="SEND"/>
+                        <input onclick="afficherMessageContact()" type="submit" value="SEND"/>
                       </form>
+                      <div id="pContactForm" style="display: none;text-align: center;margin-top: 10%;margin-left: 20%;margin-right: 20%;">
+                        <p style="font-size: 8em;">&#128540;</p>
+                        <br>
+                        <p style="font-size: 1.3em;">Your message has been sent, you will receive a confirmation email!</p>
+                    </div>
 
                     <!-- <h2 style="text-align: center;" class="sous-titre-contact">References</h2>
                     <div class="references-info ">
@@ -1028,9 +1034,18 @@
             
                 </script>
 
-
-    </div>
-    </div>
+            <script>
+            function afficherMessageContact(){
+                var x = document.forms["formContact"]["name"].value;
+                var y = document.forms["formContact"]["email"].value;
+                var z = document.forms["formContact"]["subject"].value;
+                var w = document.forms["formContact"]["text"].value;
+                if (x != "" && y != "" && z != "" && w != ""){
+                    document.getElementById("pContactForm").style.display = "block";
+                    document.getElementById("formContact").style.display = "none"
+                }
+             }
+            </script>
     <script src="../main.js"></script>
 </body>
 

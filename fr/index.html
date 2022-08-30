@@ -256,10 +256,10 @@
                         <div class="fade">
                          <h2>Bonjour !</h2>
                          <p>
-                             Je suis un étudiant en première année de cycle d'ingénieur en <strong >informatique</strong> à
+                             Je suis un étudiant en deuxième année de cycle d'ingénieur en <strong >informatique</strong> à
                              <a id="chenoislink" class="link" href="https://cytech.cyu.fr/"
                                  target="_blank"><strong>CY Tech (ex-EISTI)</strong></a>
-                                 avec une forte passion et un fort intérêt pour le développement.
+                                 avec une forte passion et un fort intérêt pour le développement, l'animation et la modélisation 3D.
                             </p>
                          
                          <a href="https://cytech.cyu.fr/" style="text-decoration:none" target="_blank">
@@ -903,13 +903,20 @@
                      <div class="references contact-column">
                         <!-- <h2 style="text-align: center;" class="sous-titre-contact">Réferences</h2> -->
 
-                        <form method="post" action="../mail.php" class="form-contact">      
+                        <iframe name="votar" style="display:none;"></iframe>
+                        <form name="formContact" id="formContact" method="post" action="../mail.php" class="form-contact" target="votar">      
                             <input name="name" type="text" required class="feedback-input" placeholder="Nom" />   
                             <input name="email" type="text" required class="feedback-input" placeholder="Email" />
                             <input name="subject" type="text" required class="feedback-input" placeholder="Sujet" />
                             <textarea name="text" required class="feedback-input" placeholder="Votre message"></textarea>
-                            <input type="submit" value="ENVOYER"/>
+                            <input onclick="afficherMessageContact()" type="submit" value="ENVOYER"/>
                           </form>
+                        <div id="pContactForm" style="display: none;text-align: center;margin-top: 10%;margin-left: 20%;margin-right: 20%;">
+                            <p style="font-size: 8em;">&#128540;</p>
+                            <br>
+                            <p style="font-size: 1.3em;">Votre message à été envoyé, vous aller recevoir un email de confirmation !</p>
+                        </div>
+                          
 
                         <!-- <div class="references-info ">
                             <a href="https://www.linkedin.com/in/luc-damas-0b67731/" target="_blank"><img src="../images/References/lucdamas.webp" class="img-reference slideLeftPetit fade" alt="Luc Damas"></a>  
@@ -1027,6 +1034,20 @@ selector.forEach(function(item) {
   });
 
 
+    </script>
+    <script>
+       function afficherMessageContact(){
+        var x = document.forms["formContact"]["name"].value;
+        var y = document.forms["formContact"]["email"].value;
+        var z = document.forms["formContact"]["subject"].value;
+        var w = document.forms["formContact"]["text"].value;
+        if (x != "" && y != "" && z != "" && w != ""){
+            document.getElementById("pContactForm").style.display = "block";
+            document.getElementById("formContact").style.display = "none";
+        }
+        
+        
+    }
     </script>
      <script src="../main.js"></script>
 
