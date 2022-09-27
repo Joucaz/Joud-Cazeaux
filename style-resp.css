@@ -312,6 +312,9 @@
         transform: scale(1.15);
     }
 }
+#videoICON{
+    width: 303px;
+}
     .button-portfolio{
         display: flex;
         flex-wrap: wrap;

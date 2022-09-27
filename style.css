@@ -484,7 +484,7 @@ section h1:hover~#quoi{
     display: none;
     position:absolute;
     left: 0;
-    top:30%;
+    top:15%;
     color:#fff;
     font-size:9vh;
     
@@ -497,7 +497,7 @@ section h1:hover~#quoi2{
     display: none;
     position:absolute;
     left: 0;
-    top:43%;
+    top:28%;
     color:#fff;
     font-size:9vh
 }
@@ -1001,6 +1001,10 @@ section h1:hover~#quoi2{
     transform:scale(1.15);
     opacity:.6
 }
+#videoICON{
+    width: 370px;
+    margin-top: 8%;
+}
 #wrapper{
     width:100%;
     max-width:964px;
@@ -1259,7 +1263,7 @@ section h1:hover~#quoi2{
     justify-content:center;
     display:flex;
     flex-direction:row;
-    margin-top:3%
+    /* margin-top:3% */
 }
 .contact-oneInfo h4{
     line-height:4
