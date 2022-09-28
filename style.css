@@ -13,7 +13,12 @@ html, body{
 }
 
 /* ANIM */
-
+.carousel-volley img{
+        border-radius: 3%;
+        width: 400px;
+        height: 225px;
+        text-align: center;
+}
 
 .fade{
     opacity: 0;
