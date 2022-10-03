@@ -313,7 +313,10 @@
     }
 }
 #videoICON{
-    width: 303px;
+    width: -webkit-fill-available;
+}
+#videoBATTLE{
+    width: -webkit-fill-available;
 }
     .button-portfolio{
         display: flex;

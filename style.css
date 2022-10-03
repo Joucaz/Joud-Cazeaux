@@ -1009,6 +1009,12 @@ section h1:hover~#quoi2{
 #videoICON{
     width: 370px;
     margin-top: 8%;
+    border-radius: 3%;
+}
+#videoBATTLE{
+    width: 370px;
+    margin-top: 8%;
+    border-radius: 3%;
 }
 #wrapper{
     width:100%;
@@ -1142,6 +1148,7 @@ section h1:hover~#quoi2{
 }
 .popup video{
     width: 310px;
+    border-radius: 3%;
 }
 
   /* END PORTFOLIO POPUP */
