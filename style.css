@@ -1257,12 +1257,13 @@ section h1:hover~#quoi2{
     height:33%
 }
 .reseauxContact{
-    width:18%;
+    width:11%;
     transition:all 1s
 }
 .reseaux-contact{
-    margin-left:30%;
-    margin-top:7%
+    margin-top:3%;
+    /* margin-top:7% */
+    text-align: center;
 }
 .reseauxContact:hover{
     transform:translateY(-15px)
