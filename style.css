@@ -1062,7 +1062,9 @@ section h1:hover~#quoi2{
 }
 /* Portfolio popup */
 
-
+.popup a{
+    text-decoration: none;
+}
 #portfolio{
     background: rgba(23, 22, 23);
     /* visibility: hidden; */
