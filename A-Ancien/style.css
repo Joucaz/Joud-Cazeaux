@@ -391,6 +391,12 @@ img.flag:hover {
   color: white;
   font-size: 5vh;
 }
+#quoi3{
+  position: relative;
+  top: 25vh;
+  color: white;
+  font-size: 5vh;
+}
 .title-section {
   position: relative;
   top: 7vh;

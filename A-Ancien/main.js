@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 var iText1 = 0 ;
 var iText2 = 0 ;
+var iText3 = 0 ;
 
 function typing(){
 
@@ -26,6 +27,7 @@ function typing(){
   if (urlcourante.match('/en/')){
     var textQuoi1 = "Programmer"
     var textQuoi2 = "Profesionnal Athlete"
+    var textQuoi3 = "3D Modeling - Animation - Motion Design"
   }
   else if (urlcourante.match('/fr/')){
     var textQuoi1 = "Développeur"
@@ -43,6 +45,12 @@ function typing(){
     document.getElementById("quoi2").classList.add("fadeQuoi")
     document.getElementById("quoi2").innerHTML += textQuoi2.charAt(iText2);
     iText2++
+    setTimeout(typing,100)
+  }
+  else if (iText3<textQuoi3.length){
+    document.getElementById("quoi3").classList.add("fadeQuoi")
+    document.getElementById("quoi3").innerHTML += textQuoi3.charAt(iText3);
+    iText3++
     setTimeout(typing,100)
   }
   else{

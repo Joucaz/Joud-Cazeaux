@@ -66,6 +66,13 @@
     #quoi2{
         width: 100%;
         display: inline-block;
+        top:41%;
+        font-size:1.8em;
+        text-align: center;
+    }
+    #quoi3{
+        width: 100%;
+        display: inline-block;
         top:36%;
         font-size:1.8em;
         text-align: center;
@@ -124,7 +131,7 @@
         padding: 3%;
     }
     .text-presentation{
-        
+        margin-top: -5%;
         width:93%;
         font-size:80%;
     }
@@ -141,6 +148,10 @@
     }
     .logo{
         width:40%
+    }
+    .logoJoucaz{
+        width: 20% !important;
+
     }
     #chenois{
         width:40%
@@ -423,7 +434,7 @@
     }
     .imgPopup{
         width: -webkit-fill-available;
-        height: 60vw;
+        height: 100%;
     }
     .popup .button {
         margin-bottom: 3%;

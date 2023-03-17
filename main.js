@@ -1,27 +1,20 @@
 
 
-menuSection()
 
-
-
+menuSection();
 
 document.addEventListener('DOMContentLoaded', function () { 
     console.log("Hi, Welcome !"); 
     // window.location.hash = 'presentation'; 
     // visible();
+    
 
     isVisible();
     presentationBlur();
     portfolioCarousel(); 
     callTyping(); 
     triPortfolio(); 
-    // changeSRC();
-    
-
-        
-
-    
-    
+    // changeSRC();   
     
 
 })
@@ -87,6 +80,8 @@ function callTyping(){
 
 var iText1 = 0; 
 var iText2 = 0; 
+var iText3 = 0; 
+
 
 function typing() {
 
@@ -97,23 +92,31 @@ function typing() {
     if (urlcourante.match('/en/')) {
         var textQuoi1 = "Developer"
         var textQuoi2 = "Athlete"
+        var textQuoi3 = "3D Artist"
     } 
     else if (urlcourante.match('/fr/')) {
         var textQuoi1 = "Développeur"
         var textQuoi2 = "Athlète"
+        var textQuoi3 = "Artiste 3D"
     }
     
-    
+        
         if (iText1 < textQuoi1.length) {
             document.getElementById("quoi").classList.add("fadeQuoi")
             document.getElementById("quoi").innerHTML += textQuoi1.charAt(iText1); iText1++; 
-            setTimeout(typing, 150)
+            setTimeout(typing, 115)
+        } 
+        else if (iText3 < textQuoi3.length) {
+            document.getElementById("quoi3").classList.add("fadeQuoi")
+            document.getElementById("quoi3").innerHTML += textQuoi3.charAt(iText3); iText3++
+            setTimeout(typing, 115)
         } 
         else if (iText2 < textQuoi2.length) {
             document.getElementById("quoi2").classList.add("fadeQuoi")
             document.getElementById("quoi2").innerHTML += textQuoi2.charAt(iText2); iText2++
-            setTimeout(typing, 150)
+            setTimeout(typing, 115)
         } 
+        
         else {
             setTimeout(function () {
                 document.getElementById("quoi").classList.remove("fadeQuoi")
@@ -122,6 +125,9 @@ function typing() {
                 document.getElementById("quoi2").classList.remove("fadeQuoi")
                 document.getElementById('quoi2').innerHTML = ''
                 iText2 = 0
+                document.getElementById("quoi3").classList.remove("fadeQuoi")
+                document.getElementById('quoi3').innerHTML = ''
+                iText3 = 0
                 setTimeout(typing, 150)
             }, 1000)
         }
@@ -130,7 +136,7 @@ function typing() {
 }
 
 function menuSection() {
-  
+    console.log("ddd");
     // $("#ulMenu li a").on("click", function() {
     //     $("a").removeClass("activeMenu");
     //     $(this).addClass("activeMenu");
@@ -145,8 +151,8 @@ function menuSection() {
     let aportfolioMenu = document.getElementById('portfolioMenu')
     let acontactMenu = document.getElementById('contactMenu')
     let network = document.getElementById("image-fixed")
-    let instagram = document.getElementById("instagram")
-    let facebook = document.getElementById("facebook")
+    // let instagram = document.getElementById("instagram")
+    // let facebook = document.getElementById("facebook")
     let linkedin = document.getElementById("linkedin")
     let mail = document.getElementById("mail")
     let behance = document.getElementById("behance")
@@ -163,8 +169,8 @@ function menuSection() {
         aportfolioMenu.classList.remove("activeMenu"); 
         acontactMenu.classList.remove("activeMenu");   
         ahomeMenu.classList.add("activeMenu");     
-        instagram.src = "../images/Reseaux/instagramblanc.png"
-        facebook.src = "../images/Reseaux/facebookblanc.png"
+        // instagram.src = "../images/Reseaux/instagramblanc.png"
+        // facebook.src = "../images/Reseaux/facebookblanc.png"
         linkedin.src = "../images/Reseaux/linkedinblanc.png"
         mail.src = "../images/Reseaux/mailblanc.png"
         github.src = "../images/Reseaux/github.png"
@@ -186,8 +192,8 @@ function menuSection() {
         aaboutMenu.classList.add("activeMenu");  
         // network.classList.add("animated")
         
-        instagram.src = "../images/Reseaux/instagramnoir.png"
-        facebook.src = "../images/Reseaux/facebooknoir.png"
+        // instagram.src = "../images/Reseaux/instagramnoir.png"
+        // facebook.src = "../images/Reseaux/facebooknoir.png"
         linkedin.src = "../images/Reseaux/linkedinnoir.png"
         mail.src = "../images/Reseaux/mailnoir.png"
         github.src = "../images/Reseaux/githubNoir.png"
@@ -205,8 +211,8 @@ function menuSection() {
         aportfolioMenu.classList.remove("activeMenu"); 
         acontactMenu.classList.remove("activeMenu");   
         askillsMenu.classList.add("activeMenu");  
-        instagram.src = "../images/Reseaux/instagramblanc.png"
-        facebook.src = "../images/Reseaux/facebookblanc.png"
+        // instagram.src = "../images/Reseaux/instagramblanc.png"
+        // facebook.src = "../images/Reseaux/facebookblanc.png"
         linkedin.src = "../images/Reseaux/linkedinblanc.png"
         mail.src = "../images/Reseaux/mailblanc.png"
         github.src = "../images/Reseaux/github.png"
@@ -224,8 +230,8 @@ function menuSection() {
         aportfolioMenu.classList.remove("activeMenu"); 
         acontactMenu.classList.remove("activeMenu");   
         acareerMenu.classList.add("activeMenu");  
-        instagram.src = "../images/Reseaux/instagramnoir.png"
-        facebook.src = "../images/Reseaux/facebooknoir.png"
+        // instagram.src = "../images/Reseaux/instagramnoir.png"
+        // facebook.src = "../images/Reseaux/facebooknoir.png"
         linkedin.src = "../images/Reseaux/linkedinnoir.png"
         mail.src = "../images/Reseaux/mailnoir.png"
         github.src = "../images/Reseaux/githubNoir.png"
@@ -244,8 +250,8 @@ function menuSection() {
         ahomeMenu.classList.remove("activeMenu"); 
         acontactMenu.classList.remove("activeMenu");   
         aportfolioMenu.classList.add("activeMenu");  
-        instagram.src = "../images/Reseaux/instagramblanc.png"
-        facebook.src = "../images/Reseaux/facebookblanc.png"
+        // instagram.src = "../images/Reseaux/instagramblanc.png"
+        // facebook.src = "../images/Reseaux/facebookblanc.png"
         linkedin.src = "../images/Reseaux/linkedinblanc.png"
         mail.src = "../images/Reseaux/mailblanc.png"
         github.src = "../images/Reseaux/github.png"
@@ -264,8 +270,8 @@ function menuSection() {
         aportfolioMenu.classList.remove("activeMenu"); 
         ahomeMenu.classList.remove("activeMenu");   
         acontactMenu.classList.add("activeMenu");  
-        instagram.src = "../images/Reseaux/instagramnoir.png"
-        facebook.src = "../images/Reseaux/facebooknoir.png"
+        // instagram.src = "../images/Reseaux/instagramnoir.png"
+        // facebook.src = "../images/Reseaux/facebooknoir.png"
         linkedin.src = "../images/Reseaux/linkedinnoir.png"
         mail.src = "../images/Reseaux/mailnoir.png"
         github.src = "../images/Reseaux/githubNoir.png"
