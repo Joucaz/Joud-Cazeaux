@@ -399,10 +399,10 @@ img.flag:hover{
 }
 ul li{
     list-style-type:none;
-    font-size:3vh;
+    font-size:2.5vh;
     flex-grow:1;
-    line-height:2.3;
-    height:100%;
+    /* line-height:2.3; */
+    /* height:100%; */
     transition:0.5s
 }
 ul{
@@ -476,10 +476,10 @@ ul li a{
     
     /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(104%) contrast(102%); */
     position: fixed;
-    width: 35px;
+    width: 23px;
     margin-left: .7%;
     /* left: 2%; */
-    top: 1.1%;
+    top: 1.9%;
     transition-duration:0.5s
     /* transition: filter 0.5s ease-in-out; */
 }

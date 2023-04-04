@@ -12,12 +12,37 @@ document.addEventListener('DOMContentLoaded', function () {
     isVisible();
     presentationBlur();
     portfolioCarousel(); 
-    callTyping(); 
+    // callTyping(); 
     triPortfolio(); 
-    // changeSRC();   
+    // changeSRC();  
+    
+    
     
 
 })
+ 
+window.addEventListener("load", function(){ 
+    console.log("test");
+
+    setTimeout(actionBeginnig, 1000);
+
+    function actionBeginnig(){
+        let objetJesuis = this.document.getElementById("jesuis");
+        objetJesuis.setAttribute("style","filter:blur(30px); transform: translateY(50px) !important; transition: 2s; opacity: 0.5; animation-play-state:paused;");
+        let imageJesuis = this.document.getElementById("image-presentation");
+        imageJesuis.setAttribute("style","top:0; left:0; width:100%; height:100%; filter:blur(0);");
+    
+        document.getElementById("quoi").style.display = "inline";
+        document.getElementById("quoi2").style.display = "inline";
+        document.getElementById("quoi3").style.display = "inline";
+        typing();
+    }
+    
+   
+
+    
+    });
+
 
 // document.addEventListener("wheel", animReseaux)
 
