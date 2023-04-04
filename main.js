@@ -4,30 +4,37 @@
 menuSection();
 
 document.addEventListener('DOMContentLoaded', function () { 
-    console.log("Hi, Welcome !"); 
+    console.log("Hi, Welcome to joudcazeaux.fr !"); 
     // window.location.hash = 'presentation'; 
     // visible();
     
 
     isVisible();
-    presentationBlur();
+    // presentationBlur();
     portfolioCarousel(); 
     // callTyping(); 
     triPortfolio(); 
     // changeSRC();  
-    
+    if (window.matchMedia("(max-width: 450px)").matches) {
+        typing();
+    }
     
     
 
 })
  
 window.addEventListener("load", function(){ 
-    console.log("test");
+    // console.log("test");
 
     setTimeout(actionBeginnig, 1000);
 
     function actionBeginnig(){
-        let objetJesuis = this.document.getElementById("jesuis");
+
+        if (window.matchMedia("(max-width: 450px)").matches) {
+            
+        }
+        else{
+            let objetJesuis = this.document.getElementById("jesuis");
         objetJesuis.setAttribute("style","filter:blur(30px); transform: translateY(50px) !important; transition: 2s; opacity: 0.5; animation-play-state:paused;");
         let imageJesuis = this.document.getElementById("image-presentation");
         imageJesuis.setAttribute("style","top:0; left:0; width:100%; height:100%; filter:blur(0);");
@@ -36,11 +43,10 @@ window.addEventListener("load", function(){ 
         document.getElementById("quoi2").style.display = "inline";
         document.getElementById("quoi3").style.display = "inline";
         typing();
+        }
+        
     }
-    
-   
-
-    
+       
     });
 
 
@@ -93,14 +99,14 @@ function onetime(node, type, callback) {
 
 }
 
-function callTyping(){
+// function callTyping(){
     
-    var jeSuis = document.querySelector("#jesuis")
-    console.log(jesuis)
+//     var jeSuis = document.querySelector("#jesuis")
+//     console.log(jesuis)
 
-    onetime(jesuis, "mouseover", typing);
+//     onetime(jesuis, "mouseover", typing);
     
-}
+// }
 
 
 var iText1 = 0; 
@@ -161,7 +167,7 @@ function typing() {
 }
 
 function menuSection() {
-    console.log("ddd");
+    // console.log("ddd");
     // $("#ulMenu li a").on("click", function() {
     //     $("a").removeClass("activeMenu");
     //     $(this).addClass("activeMenu");
@@ -356,11 +362,11 @@ function triPortfolio() {
     }
 }
 
-function presentationBlur() {
-    if (window.matchMedia("(max-width: 450px)").matches) {
-        typing();
-    }
-}
+// function presentationBlur() {
+//     if (window.matchMedia("(max-width: 450px)").matches) {
+//         typing();
+//     }
+// }
 
 function portfolioCarousel() {
     const gap = 16; 
