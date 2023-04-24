@@ -184,7 +184,7 @@ section h1{
     font-weight:800;
     z-index:2;
     transition:2s;
-    animation:first 2s alternate infinite
+    /* animation:first 2s alternate infinite */
 }
 @keyframes first{
     0%{
@@ -642,6 +642,10 @@ ul li a{
     text-decoration:none;
     color:#1A1E23
 }
+.link:hover{
+    transition:0.4s;
+    color:#e3b405!important
+}
 #chenoislink{
 
 }
@@ -895,23 +899,82 @@ ul li a{
     margin-top:2%
 }
 .career-column{
-    width:100%;
     height:100%;
-    margin:3%;
-    margin-top:2%
+    margin:1.5%;
+    margin-top:2%;
+    width: 50%;
 }
 .middle{
     margin-top:5%;
     border-left:solid #171617
 }
+.career-photos-exp{
+    width: 10%;
+}
 .career-photos{
-    width:22%
+    width: 10%;
+}
+.career-photos img{
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+    width: -webkit-fill-available;
+    border-radius: 20%;
+}
+.career-photos-exp img{
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+    width: -webkit-fill-available;
+    border-radius: 20%;
+}
+.career-photos img:hover{
+    
+    transform: scale(1.07);
+    width: -webkit-fill-available;
+    border-radius: 20%;
+}
+.career-photos-exp img:hover{
+    transform: scale(1.07);
+    width: -webkit-fill-available;
+    border-radius: 20%;
 }
 .career-infos{
+    /* margin-top: 5%; */
     display:flex;
     flex-direction:row;
-    padding:2%
+    align-items: center;
+    width: 100%;
+    /* justify-content: flex-end; */
 }
+.career-infos-exp{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+.experiences{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+/* .experience1{
+    width: 50%;
+}
+.experience2{
+    width: 50%;
+} */
+.formation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+/* .column-experience{
+    width: 60%;
+} */
 /* .career-infos-reverse{
     overflow: hidden;
     display:flex;
@@ -919,14 +982,16 @@ ul li a{
     padding:2%
 } */
 .career-text{
-    padding:6%;
-    width:80%
+    padding:2%;
+    width:80%;
 }
 .career-right{
-    text-align:start
+    text-align:start;
+    margin-left: 2%;
 }
 .career-left{
-    text-align:end
+    text-align:end;
+    margin-right: 2%;
 }
 .sous-titre-career{
     font-size:2.5em

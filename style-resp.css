@@ -120,6 +120,9 @@
         display:flex;
         flex-direction:column
     }
+    .career-infos-exp{
+        margin-bottom: 3%;
+    }
     .photo-presentation{
         margin-top:0;
         width:90%
@@ -257,8 +260,8 @@
         border:none
     }
     .career-photos{
-        height:90px;
-        width:90px
+        height:70px;
+        width:70px
     }
     .career-content h3{
         font-size:.8em

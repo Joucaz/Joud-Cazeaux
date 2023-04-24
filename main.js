@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 window.addEventListener("load", function(){ 
     // console.log("test");
 
-    setTimeout(actionBeginnig, 1000);
+    setTimeout(actionBeginnig, 1250);
 
     function actionBeginnig(){
 
@@ -34,7 +34,7 @@ window.addEventListener("load", function(){ 
             
         }
         else{
-            let objetJesuis = this.document.getElementById("jesuis");
+        let objetJesuis = this.document.getElementById("jesuis");
         objetJesuis.setAttribute("style","filter:blur(30px); transform: translateY(50px) !important; transition: 2s; opacity: 0.5; animation-play-state:paused;");
         let imageJesuis = this.document.getElementById("image-presentation");
         imageJesuis.setAttribute("style","top:0; left:0; width:100%; height:100%; filter:blur(0);");
