@@ -5,7 +5,7 @@
 
 
 html, body{
-    font-family:'Montserrat','serif';
+    font-family:'Montserrat','serif' !important;
     -ms-overflow-style:auto;
     scrollbar-width:none;
     /* scroll-behavior: smooth !important;
