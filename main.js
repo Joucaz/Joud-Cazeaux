@@ -187,6 +187,8 @@ function menuSection() {
     let linkedin = document.getElementById("linkedin")
     let mail = document.getElementById("mail")
     let behance = document.getElementById("behance")
+    let twitter = document.getElementById("twitter")
+    let github = document.getElementById("github")
       
       
     let j = event.target
@@ -206,6 +208,7 @@ function menuSection() {
         mail.src = "../images/Reseaux/mailblanc.png"
         github.src = "../images/Reseaux/github.png"
         behance.src = "../images/Reseaux/behanceblanc.png"
+        twitter.src = "../images/Reseaux/twitter.png"
         // network.classList.add("animated")
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
@@ -229,6 +232,7 @@ function menuSection() {
         mail.src = "../images/Reseaux/mailnoir.png"
         github.src = "../images/Reseaux/githubNoir.png"
         behance.src = "../images/Reseaux/behancenoir.png"
+        twitter.src = "../images/Reseaux/twitternoir.png"
         // network.style.display = "block"
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
@@ -248,6 +252,7 @@ function menuSection() {
         mail.src = "../images/Reseaux/mailblanc.png"
         github.src = "../images/Reseaux/github.png"
         behance.src = "../images/Reseaux/behanceblanc.png"
+        twitter.src = "../images/Reseaux/twitter.png"
         
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
@@ -267,6 +272,7 @@ function menuSection() {
         mail.src = "../images/Reseaux/mailnoir.png"
         github.src = "../images/Reseaux/githubNoir.png"
         behance.src = "../images/Reseaux/behancenoir.png"
+        twitter.src = "../images/Reseaux/twitternoir.png"
         
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
@@ -287,6 +293,7 @@ function menuSection() {
         mail.src = "../images/Reseaux/mailblanc.png"
         github.src = "../images/Reseaux/github.png"
         behance.src = "../images/Reseaux/behanceblanc.png"
+        twitter.src = "../images/Reseaux/twitter.png"
         
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
@@ -307,6 +314,7 @@ function menuSection() {
         mail.src = "../images/Reseaux/mailnoir.png"
         github.src = "../images/Reseaux/githubNoir.png"
         behance.src = "../images/Reseaux/behancenoir.png"
+        twitter.src = "../images/Reseaux/twitternoir.png"
         // network.classList.add("slideInTop")
         // setTimeout(function () { 
         //     network.classList.remove("slideInTop") 
