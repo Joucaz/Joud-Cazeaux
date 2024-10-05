@@ -70,9 +70,9 @@
     <style type="text/css">
     /*<![CDATA[*/
 
-        #bg-index-entry-6 .bg-content {
-            background-image: url(images/Home/ArtistJoucaz.webp);
-        }
+        /* #bg-index-entry-6 .bg-content {
+            background-image: url(images/Home/JCArtist-Valorant.webp);
+        } */
                         
     /*]]>*/
     </style>
@@ -106,7 +106,11 @@
               <div class="index-entry">
                   <div class="bg-index-entry" id="bg-index-entry-6">
                       <a class="" href="joucaz/"></a>
-                      <div class="bg-content"></div>
+                      <div class="bg-content" id="background-portfolio">
+                        <!-- <video autoplay muted loop id="myVideo">
+                            <source src="videos\FiverVideoGood.mp4" type="video/mp4">
+                          </video> -->
+                      </div>
                   </div>
   
                   <div class="index-menus">
@@ -119,6 +123,35 @@
   
       </section>
   </section>
+
+
+<script>
+
+const backgrounds = [
+    // 'url(images/Home/JCArtist-3Car.webp)',
+    'url(images/Home/JCArtist-3Car2.webp)',
+    'url(images/Home/JCArtist-CSChickenTrophy.webp)',
+    // 'url(images/Home/JCArtist-CSSnip.webp)',
+    'url(images/Home/JCArtist-CSWalk.webp)',
+    // 'url(images/Home/JCArtist-KaydopSortie2.webp)',
+    'url(images/Home/JCArtist-Valorant.webp)',
+    'url(images/Home/JCArtist-Jordan1.webp)',
+    'url(images/Home/JCArtist-M8F1.webp)'
+];
+
+const container = document.getElementById('background-portfolio');
+function changeBackground() {
+    const randomIndex = Math.floor(Math.random() * backgrounds.length);
+    container.style.backgroundImage = backgrounds[randomIndex];
+}
+
+window.onload = function() {
+    changeBackground();
+};
+
+</script>
+
+
     <!-- load the first page of the website -->
 </body>
 </html>
