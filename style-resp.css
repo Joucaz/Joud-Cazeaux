@@ -197,7 +197,9 @@
         margin-bottom:0
     }
     .personal-skill{
-        margin:-10% 5% 12% 5%;
+        margin: 0;
+        width: 100%;
+        /* margin:-10% 5% 12% 5%; */
         /* margin-top: -5%;
     margin-bottom: 12%; */
     }
@@ -327,6 +329,9 @@
     }
 }
 #videoICON{
+    width: -webkit-fill-available;
+}
+#videoZOMBRICAZ{
     width: -webkit-fill-available;
 }
 #videoBATTLE{
