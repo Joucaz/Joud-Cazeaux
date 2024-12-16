@@ -32,9 +32,9 @@ if(!isset($_SERVER['HTTP_REFERER'])){
 
 
 
-    $to = "joud@joudcazeaux.fr";
-$fromNoReply = "noreply@joudcazeaux.fr"; // Adresse "From" générique
-$from = "joud@joudcazeaux.fr"; // Adresse "From" générique
+$to = "joud@joudcazeaux.fr";
+$fromNoReply = "Joud Cazeaux <noreply@joudcazeaux.fr>";
+$from = "Joud Cazeaux <joud@joudcazeaux.fr>"; 
 $email = $_POST['email'];
 $name = $_POST['name'];
 $subject = $_POST['subject'];
