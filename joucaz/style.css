@@ -591,15 +591,26 @@ a:hover {
     /* margin-top: 2%; */
   }
   #showreel{
+    margin-top: -2%;
     background-color: #171617;
     overflow: hidden;
-    padding: 0% 12% 2% 12%;
+    padding: 0% 16% 1% 16%;
     display: flex;
   }
   #contact{
     background-color: #171617;
     overflow: hidden;
   
+  }
+
+  .linkRedirection {
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: inherit; /* Garde la couleur par défaut du texte (héritée du parent) */
+    transition: color 0.3s ease; /* Ajoute une transition pour un effet fluide */
+  }
+
+  .linkRedirection:hover {
+    color: #e3b405; /* Change la couleur du texte au survol */
   }
   /* END PAGE FULL COVER */
 
@@ -742,6 +753,12 @@ a:hover {
     line-height: 0;
   }
   .boxShowreel{
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    /* box-shadow: 0 20px 30px rgba(255, 251, 0, 0.301); */
+    box-shadow: 0 10px 30px rgba(255,255,255, 0.301);
+    line-height: 0;
     margin: 6% 2% 3% 2%;
     /* margin-top: 5%; */
     /* width: 50%; */
@@ -833,8 +850,8 @@ a:hover {
   display: none;
 }
 .button-portfolio{
-  margin-bottom: 2%;
-  margin-top: 1%;
+  /* margin-bottom: 2%; */
+  /* margin-top: 1%; */
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -849,7 +866,7 @@ a:hover {
     text-align: center;
 }
 .portfolio-content{
-  margin-top: 2%;
+  /* margin-top: 2%; */
   height: 70%;
   display: flex;
   flex-direction: column;
@@ -874,16 +891,29 @@ a:hover {
   height: 225px;
   text-align: center;
 }
+#divJoucazLogo{
+  margin: 1% 0% 1% 0%;
+  text-align: center;
+}
+#JoucazLogo{
+  /* box-shadow: 0 10px 20px rgba(255, 255, 255, 1); */
 
+  width: 5%;
+}
 /* Switch */
 .interuptor{
-  color: #fff;
+  /* height: 100vh; */
+  color: #8e8e8e;
   display: flex;
   text-align: center;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  gap: 20px; 
+}
+.interuptor h2{
+  min-width: 20%;
 }
 .switch{
   background-color: #e3b405;
@@ -913,7 +943,10 @@ a:hover {
   left: 0px;
   transition: all .4s;
 }
-
+.text-checked{
+  color: white;
+  text-shadow: 0 2px 10px #e3b405;
+}
 .switch-checked{
   background-color: #e3b405;
   box-shadow : inset 0px 0px 0px 1px #e3b405;
@@ -1018,6 +1051,7 @@ filter: grayscale(100%);  */
   color: white;
 }
 .soustitre{
+  margin-top: 0.5%;
   font-size: smaller;
   text-align: center;
   color: #fff;
