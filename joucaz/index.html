@@ -118,18 +118,17 @@
 
      <!-- ----------------------- Menu ----------------------- -->
 
-     <header id="headerMenu">
+     <!-- <header id="headerMenu">
                      
         <a href="#" class="logo"><img style="max-width: 8%;" src="Creations/Logo/Joucaz/LogoJCJaune.webp" alt=""></a>
         <ul id="ulMenu">
-            <!-- <li class="liMenu"><a href="#" style="--i:1;" id="aHome" class="active">Accueil</a></li> -->
             <li class="liMenu"><a href="../" id="aHome" style="--i:2;">Home</a></li>
             <li class="liMenu"><a href="#showreel" id="aShowreel" style="--i:2;">Showreel</a></li>
             <li class="liMenu"><a href="#portfolio" id="aPortfolio" style="--i:2;">Portfolio</a></li>
             <li class="liMenu"><a href="#contact" id="aContact" style="--i:3;">Contact</a></li>
         </ul>
     
-    </header>
+    </header> -->
     
     <!-- <nav id="navmenu" style=" animation: fadeIn 3s;">
         <ul style="margin-left: 22vw ; margin-right: 22vw ;" >
@@ -183,38 +182,7 @@
     
         </div>
 
-        <div id="showreel" class="sec page full">
-            <div class="image-portfolioShowreel box boxShowreel" >
-                <a href="Creations/Autres/Showreel/ShowreelJoucaz.mp4" target="_blank" style="text-decoration:none">
-    
-                    <iframe class="videoShowreel" height="428"
-                    src="https://www.youtube.com/embed/KoE_1FwPLqI?autoplay=1&mute=1&loop=1" 
-                    title="Showreel Joucaz" frameborder="0" 
-                    allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen></iframe>
-    
-                    <h3>🎬 Showreel 3D 2023 - By Joucaz 🎬  </h3>
-    
-                </a>
-            </div>
-            <div class="image-portfolioShowreel box boxShowreel" >
-                <a href="Creations/Autres/Showreel/ShowreelJoucaz.mp4" target="_blank" style="text-decoration:none">
-    
-                    <iframe class="videoShowreel" height="428"
-                    src="https://www.youtube.com/embed/ytPZXCiRPbI?autoplay=1&mute=1&loop=1" 
-                    title="Showreel Joucaz" frameborder="0" 
-                    allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen></iframe>
-    
-                    <h3>🎬 Showreel 3D 2022 - By Joucaz 🎬</h3>
-    
-                </a>
-            </div>
-            
-            
         
-        <br>
-    </div>
        <!-- ----------------------- Page 1 Portfolio ----------------------- -->
        
        <div id="portfolio" class="sec page full">
@@ -224,7 +192,81 @@
                 <div class="fade slideTopPetit one-item">
                     
                 <h1 id="h1-creations" class="titreaccueil" >Portfolio</h1>
-                <h2 id="h2-creations" class="soustitre">Don't hesitate to contact me for any 2D or 3D project !</h2>
+                <!-- <h2 id="h2-creations" class="soustitre">Don't hesitate to contact me for any 2D or 3D project !</h2> -->
+                
+                <div class="interuptor">
+                    <h2>Developer</h2>
+                    <label class="switch">
+                        <input type="checkbox" id="toggleSwitch"/>
+                        <div></div>
+                    </label>
+                    <h2>3D Artist</h2>
+                    <script>
+                        $('.switch input').on('change', function(){
+                        var dad = $(this).parent();
+                        if($(this).is(':checked'))
+                            dad.addClass('switch-checked');
+                        else
+                            dad.removeClass('switch-checked');
+                        });
+                        $(document).ready(function () {
+                            $('#toggleSwitch').on('change', function () {
+                                if ($(this).is(':checked')) {
+                                    // Mode 3D Artist
+                                    $('#developerContent').hide();
+                                    $('#artistContent').show();
+                                } else {
+                                    // Mode Developer
+                                    $('#developerContent').show();
+                                    $('#artistContent').hide();
+                                }
+                            });
+                        });
+                    </script>      
+                </div>
+                <h4 class="soustitre">Toggle the switch to view my projects as a Developer or a 3D Artist</h2>
+                   
+                    <div id="developerContent" style="display: block;">
+                        <p>Content for Developer mode.</p>
+                    </div>
+                    <div id="artistContent" style="display: none;">
+                        <p>Content for 3D Artist mode.</p>
+                    </div>
+                    
+                <div id="showreel" class="sec page full">
+                    <div class="image-portfolioShowreel box boxShowreel" >
+                        <a href="Creations/Autres/Showreel/ShowreelJoucaz.mp4" target="_blank" style="text-decoration:none">
+            
+                            <iframe class="videoShowreel" height="299"
+                            src="https://www.youtube.com/embed/KoE_1FwPLqI?autoplay=1&mute=1&loop=1&controls=1&modestbranding=1&rel=0&playlist=KoE_1FwPLqI" 
+                            title="Showreel Joucaz" frameborder="0" 
+                            allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+
+            
+                            <h3>🎬 Showreel 3D 2023 - By Joucaz 🎬  </h3>
+            
+                        </a>
+                    </div>
+                    <div class="image-portfolioShowreel box boxShowreel" >
+                        <a href="Creations/Autres/Showreel/ShowreelJoucaz.mp4" target="_blank" style="text-decoration:none">
+            
+                            <iframe class="videoShowreel" height="299"
+                            src="https://www.youtube.com/embed/ytPZXCiRPbI?autoplay=1&mute=1&loop=1&controls=1&modestbranding=1&rel=0&playlist=ytPZXCiRPbI" 
+                            title="Showreel Joucaz" frameborder="0" 
+                            allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen></iframe>
+            
+                            <h3>🎬 Showreel 3D 2022 - By Joucaz 🎬</h3>
+            
+                        </a>
+                    </div>
+                    
+                    
+                
+                <br>
+            </div>
+
                  <div class="fade button-portfolio" id="button-portfolio">
                     <div class="button-all" >
                         <button class="button button-filter" data-rel="all" style="text-decoration: none;">All</button>
