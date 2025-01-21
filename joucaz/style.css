@@ -112,9 +112,6 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.popup video{
-  margin-top: 7%;
-}
 .popup img{
   margin-top: 7%;
 }
@@ -211,14 +208,10 @@ a:hover {
   flex-direction: row;
   justify-content: space-around;
 }
-.imgPopup{
-  width: 310px;
-  height: 310px;
-  border-radius: 3%;
-}
 .popup video{
-  width: 310px;
+  width: 400px;
   border-radius: 3%;
+  margin-top: 7%;
 }
 
 /* END PORTFOLIO POPUP */
@@ -899,6 +892,10 @@ a:hover {
   /* box-shadow: 0 10px 20px rgba(255, 255, 255, 1); */
 
   width: 5%;
+}
+.left-popup img{
+  width: 400px;  
+  border-radius: 3%;
 }
 /* Switch */
 .interuptor{
