@@ -290,6 +290,9 @@ body{
   and (orientation: portrait) 
   { 
     .entry-logo-home{
+        top: 5%;
+        left: 50%;
+        position: fixed;
         min-width: 100%;
     }
     .entry-logo-home h2{
