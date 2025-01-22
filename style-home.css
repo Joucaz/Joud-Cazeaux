@@ -84,9 +84,7 @@ h2{
 }
 h2{
     font-size:2.6rem;
-    line-height:1;
     margin-top:0;
-    margin-bottom:.5rem
 }
 @media screen and (min-width: 28.125em){
     h2{
@@ -162,23 +160,15 @@ body{
     grid-template-columns:50% 50%;
     height:100%
 }
-#container-accueil div.index-entries div.entry-logo-home{
+/* #container-accueil div.index-entries div */
+.entry-logo-home{
     position: absolute;
     z-index: 100;
     top: 50%;
     left: 50%;
-    width: 280px;
-    height: 50px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
     transform: translate(-147px, -25px);
-    justify-content: center;
 }
-#container-accueil div.index-entries div.entry-logo-home h2{
-    margin:0 0 0 2px;
-    padding:0;
+.entry-logo-home h2{
     color:#fff;
     font-style:italic;
     font-size:3.8rem;
@@ -292,4 +282,19 @@ body{
     }
 }
 /*# sourceMappingURL=app.min.css.map */
+
+/* PHONE PORTRAIT*/
+@media only screen 
+  and (min-device-width: 350px) 
+  and (max-device-width: 767px) 
+  and (orientation: portrait) 
+  { 
+    .entry-logo-home{
+        min-width: 100%;
+    }
+    .entry-logo-home h2{
+        font-size:3.8rem;
+    }
+
+  }
  
