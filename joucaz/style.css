@@ -612,9 +612,14 @@ a:hover {
 /*RESEAUX */
 
 #image-fixed {
-    position:fixed;
-    bottom: 0%;
-    z-index: 2000;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 4%;
+  position:fixed;
+  /* bottom: 0%; */
+  z-index: 2000;
     
 
   }
@@ -627,12 +632,12 @@ a:hover {
     
     margin: 0;
     padding: 0;
-    width: 4%;
+    width: 100%;
     transition: all 1s;
    
   }
   .reseaux:hover{
-    transform: translateY(-15px);
+    transform: translateX(8px);
      /* rotate(-360deg); */
   }
 
