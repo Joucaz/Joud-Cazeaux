@@ -854,6 +854,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
 
 }
 .button-portfolio .button{
@@ -870,12 +871,13 @@ a:hover {
   flex-direction: column;
 }
 #items-portfolio{
+  gap: 30px;
   margin-top: 2%;
   height: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 #items-portfolio img{
   border-radius: 3%;
@@ -975,7 +977,7 @@ a:hover {
   /* -webkit-filter: grayscale(100%);
 filter: grayscale(100%);  */
   /* box-shadow: 0 20px 30px rgba(255, 251, 0, 0.301); */
-  margin-bottom: 20%;
+  margin-bottom: 8%;
 
   position: relative;
   overflow: hidden;

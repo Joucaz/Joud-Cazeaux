@@ -44,8 +44,9 @@
          
       }
       #showreel{
+        padding: 0% 3% 0% 3%;
         padding-bottom: 10%;
-        padding-top: 12vh;
+        /* padding-top: 12vh; */
         display: flex;
         flex-direction: column;
       }
@@ -60,11 +61,13 @@
         line-height: 3.5;
     }
     .boxShowreel{
-      width: 96%;
+      margin: 6% 0% 3% 0%;
+      /* width: 96%;
       margin-left: 2%;
-      margin-right: 2%;
+      margin-right: 2%; */
     }
     .boxShowreel h3 {
+      font-size: 1.0em;
       line-height: 2.5;
       color: #fff !important;
       /* margin-top: 5%; */
@@ -90,7 +93,7 @@
       font-size: 0.7em;
     }
     #items-portfolio h3 {
-      font-size: 1.2em;
+      font-size: 1.0em;
     }
     #navmenu{
       display: none;
@@ -100,13 +103,17 @@
       visibility: hidden;
     }
     #image-fixed{
-      height: 10%;
-     position: absolute;
-     top: 3%;
-     text-align: center;
+      padding: 8% 5% 2% 5%;
+      display: flex;
+      max-width: 100%;
+      height: fit-content;
+      position: relative;
+      top: 3%;
+      text-align: center;
+      flex-direction: row;
     }
     .reseaux{
-      width: 15%;
+      width: 100%;
     }
     .soustitre{
       margin: 5%;
@@ -117,7 +124,7 @@
       margin-bottom: 10%;
       /* justify-content: space-evenly; */
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 40% 40%;
     grid-gap: 10px;
     }
     .contact-logo{
@@ -210,6 +217,34 @@
       top: 8px;
       font-size: 40px;
   }
- 
-    
+  
+  #divJoucazLogo{
+    margin: 3% 0% 5% 0%;
   }
+  #JoucazLogo {
+    width: 20%;
+  }
+
+  .switch{
+    width: 60px;
+    height: 32px;
+    border-radius: 32px;
+  }
+  .switch input{
+    display: none;
+  }
+  .switch input:checked + div{
+    left: calc(100% - 25px);
+  }
+  .switch div{
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    top: 0;
+    left: 0;
+  }
+  .interuptor{
+    gap: 15px;
+  }
+  
+}
