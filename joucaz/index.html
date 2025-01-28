@@ -758,7 +758,7 @@
                                 <div class="flex-popup">
                                     <div class="left-popup">
                                         <img id="kcorpPopup" src="./Creations/Plugins/CustomUI/KarmineCustomUI.webp" alt="kcorp decal noir">   
-                                        <div class="popup-flex-color">
+                                        <div class="popup-flex-color" style="margin-top: 2%; margin-bottom: 0%;">
                                             <!-- <div>
                                                 Choose the color : 
                                             </div> -->
@@ -801,6 +801,12 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <a href="https://bakkesplugins.com/plugins/view/503" target="_blank">
+                                            <button class="button" style="text-decoration: none; font-size: 1em;margin-top: 3%;">Download</button>
+                                        </a>
+                                        <a href="https://github.com/Joucaz/CustomUI" target="_blank">
+                                            <button class="button" style="text-decoration: none; font-size: 1em;margin-top: 3%;">Github</button>
+                                        </a>
                                                              
                                     </div>
                                     <!-- <div class="left-popup">
@@ -831,6 +837,7 @@
                                         <div class="centerPop">
                                             <strong>C++</strong>  |  <strong>BakkesMod API</strong> |  <strong>2025</strong>
                                         </div>
+                                        
                 
                                     </div>
                                 </div>
@@ -1598,14 +1605,15 @@
                 window.open(imageSrc);
             });
 
-
         function openPopup(popupId) {
             document.getElementById(popupId).style.display = "block";
+            document.body.style.overflow = "hidden"; // Bloque le défilement
         }
 
         function closePopup(popupId) {
             event.preventDefault();
             document.getElementById(popupId).style.display = "none";
+            document.body.style.overflow = ""; // Rétablit le défilement
         }
 
         function showImageKcorp(color) {
