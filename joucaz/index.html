@@ -752,9 +752,21 @@
 
                     <div id="popupCustomUI" class="overlay">
                         <div class="popup">
-                            <h2>CustomUI - Rocket League Plugin <Script></Script></h2>
+                            <h2>CustomUI - Rocket League Plugin</h2>
                             <a class="close" href="#" onclick="closePopup('popupCustomUI')">&times;</a>
+
                             <div class="content">
+                                <br>
+                                <h4>Number of users (live update): <strong><span id="userCountNumber" style="color: #e3b405;">Loading...</span></strong></h4>
+                                <script>
+                                    fetch("https://joudcazeaux.fr/CustomUI/getNumberUserCustomUI.php")
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        document.getElementById("userCountNumber").textContent = data
+                                    })
+                                    .catch(error => console.error('Erreur when loading:', error));
+
+                                </script>
                                 <div class="flex-popup">
                                     <div class="left-popup">
                                         <img id="kcorpPopup" src="./Creations/Plugins/CustomUI/KarmineCustomUI.webp" alt="kcorp decal noir">   
@@ -1052,7 +1064,7 @@
                                             <source src="./Creations/Valorant/ProdigyAgency/OmenProdigyAgencyCutSmall.mp4" type="video/mp4">
                                             Votre navigateur ne prend pas en charge la vidéo HTML.
                                         </video> 
-                                        <a href="./Creations/Valorant/ProdigyAgency/OmenProdigyAgency.mp4" target="_blank">
+                                        <a href="https://youtu.be/gepDuIgGtJY" target="_blank">
                                             <button class="button" style="text-decoration: none; font-size: 1em;margin-top: 3%;">Full video</button>
                                         </a>
                                     </div>
