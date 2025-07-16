@@ -15,6 +15,31 @@
     display: none;
   } */
 
+  .backgroundMorphism{
+    /* position: sticky; */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+    position: fixed;
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-image:
+      radial-gradient(15% 25% at 20% 45%, rgba(227, 180, 5, 0.02) 5%, rgba(23, 22, 23, 0) 100%),
+      radial-gradient(18% 28% at 18% 71%, rgba(227, 180, 5, 0.025) 6%, rgba(23, 22, 23, 0) 100%),
+      radial-gradient(70% 53% at 36% 76%, #171617 0%, rgba(23, 22, 23, 0) 100%),
+      radial-gradient(42% 53% at 15% 94%, rgba(227, 180, 5, 0.04) 7%, rgba(23, 22, 23, 0) 100%),
+      radial-gradient(42% 53% at 34% 72%, rgba(23, 22, 23, 0.7) 7%, rgba(23, 22, 23, 0) 100%),
+      radial-gradient(18% 28% at 35% 87%, rgba(23, 22, 23, 0.8) 7%, rgba(23, 22, 23, 0) 100%),
+      radial-gradient(31% 43% at 7% 98%, rgba(227, 180, 5, 0.03) 24%, rgba(23, 22, 23, 0) 100%),
+      radial-gradient(21% 37% at 72% 23%, rgba(23, 22, 23, 1) 24%, rgba(23, 22, 23, 0) 100%),
+      radial-gradient(35% 56% at 91% 74%, rgba(227, 180, 5, 0.02) 9%, rgba(23, 22, 23, 0) 100%),
+      radial-gradient(74% 86% at 67% 38%, rgba(23, 22, 23, 1) 24%, rgba(23, 22, 23, 0) 100%),
+      linear-gradient(125deg, #171617 1%, #171617 100%);
+
+    /* background-image: radial-gradient(15% 25% at 20% 45%, #e3b4050f 5%, #17161700 100%), radial-gradient(18% 28% at 18% 71%, #e3b40511 6%, #17161700 100%), radial-gradient(70% 53% at 36% 76%, #171617 0%, #17161700 100%), radial-gradient(42% 53% at 15% 94%, #e3b40533 7%, #17161700 100%), radial-gradient(42% 53% at 34% 72%, #171617aa 7%, #17161700 100%), radial-gradient(18% 28% at 35% 87%, #171617cc 7%, #17161700 100%), radial-gradient(31% 43% at 7% 98%, #e3b4051a 24%, #17161700 100%), radial-gradient(21% 37% at 72% 23%, #171617 24%, #17161700 100%), radial-gradient(35% 56% at 91% 74%, #e3b40529 9%, #17161700 100%), radial-gradient(74% 86% at 67% 38%, #171617 24%, #17161700 100%), linear-gradient(125deg, #171617 1%, #171617 100%); */
+  }
   
 /* ANIM */
 
@@ -160,15 +185,30 @@ a:hover {
 .popup {
   top: 15vh;
   text-align: center;
-  border: solid 7px;
+  /* border: solid 7px; */
   color: #fff;
   z-index: -1;
   margin: auto;
   padding: 20px;
-  background: #171617;
-  border-radius: 5px;
+  /* background: #171617; */
+  border-radius: 15px;
   width: 70%;
   position: relative;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image:
+    radial-gradient(15% 25% at 20% 45%, rgba(227, 180, 5, 0.02) 5%, rgba(23, 22, 23, 0) 100%),
+    radial-gradient(18% 28% at 18% 71%, rgba(227, 180, 5, 0.025) 6%, rgba(23, 22, 23, 0) 100%),
+    radial-gradient(70% 53% at 36% 76%, #171617 0%, rgba(23, 22, 23, 0) 100%),
+    radial-gradient(42% 53% at 15% 94%, rgba(227, 180, 5, 0.04) 7%, rgba(23, 22, 23, 0) 100%),
+    radial-gradient(42% 53% at 34% 72%, rgba(23, 22, 23, 0.7) 7%, rgba(23, 22, 23, 0) 100%),
+    radial-gradient(18% 28% at 35% 87%, rgba(23, 22, 23, 0.8) 7%, rgba(23, 22, 23, 0) 100%),
+    radial-gradient(31% 43% at 7% 98%, rgba(227, 180, 5, 0.03) 24%, rgba(23, 22, 23, 0) 100%),
+    radial-gradient(21% 37% at 72% 23%, rgba(23, 22, 23, 1) 24%, rgba(23, 22, 23, 0) 100%),
+    radial-gradient(35% 56% at 91% 74%, rgba(227, 180, 5, 0.02) 9%, rgba(23, 22, 23, 0) 100%),
+    radial-gradient(74% 86% at 67% 38%, rgba(23, 22, 23, 1) 24%, rgba(23, 22, 23, 0) 100%),
+    linear-gradient(125deg, #171617 1%, #171617 100%);
+  box-shadow: 0 0 20px #fff;
   /* transition: opacity 500ms; */
   transition: all 200ms ease-in-out;
 }
@@ -579,19 +619,19 @@ a:hover {
   }
   #portfolio{
     z-index: 500000;
-    background-color: #171617;
+    /* background-color: #171617; */
     overflow: hidden;
     /* margin-top: 2%; */
   }
   #showreel{
     margin-top: -2%;
-    background-color: #171617;
+    /* background-color: #171617; */
     overflow: hidden;
     padding: 0% 16% 1% 16%;
     display: flex;
   }
   #contact{
-    background-color: #171617;
+    /* background-color: #171617; */
     overflow: hidden;
   
   }
@@ -747,8 +787,12 @@ a:hover {
     overflow: hidden;
     transition: .5s;
     /* box-shadow: 0 20px 30px rgba(255, 251, 0, 0.301); */
-    box-shadow: 0 20px 30px rgba(255,255,255, 0.301);
+    box-shadow: 0 10px 30px rgba(255,255,255, 0.301);
+    
     line-height: 0;
+  }
+  .boxTitle{
+    background-color: #171617 !important;
   }
   .boxShowreel{
     flex: 1;
@@ -826,24 +870,40 @@ a:hover {
   color: #fff;
 }
 
+.button-developer{
+  margin-top: 2%;
+}
 .portfolio-page .button {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #171617;
+  background: #17161700;
   padding: 15px;
   border: 2px solid #fff !important;
+  border-radius: 15px;
   display: inline-block;
   transition: all 0.4s ease 0s;
+  box-shadow: #fff 0 0 10px 0;
+  
+    /* box-shadow: 0 20px 30px rgba(255,255,255, 0.301); */
 
 }
 
 .portfolio-page .button:hover {
-  color: #171617 !important;
+  /* color: #171617 !important; */
+  /* background-image: linear-gradient(to right, #e3b405, #ffdd62); */
   background: #e3b405;
   border-color: #e3b405 !important;
+  box-shadow: #e3b405 0 0 10px 0;
   transition: all 0.4s ease 0s;
   }
+
+.button-filter.active {
+  background: #e3b405;
+  border-color: #e3b405 !important;
+  box-shadow: #e3b405 0 0 10px 0;
+}
+
 .button-tel{
   display: none;
 }
@@ -857,6 +917,8 @@ a:hover {
   
 
 }
+
+         
 .button-portfolio .button{
   font-size: 1em;
     margin-right: 5px;
@@ -870,8 +932,8 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-#items-portfolio{
-  margin: 2% 5% 2% 5%;
+.items-portfolio{
+  margin: 2% 5% 15% 5%;
   gap: 30px;
   height: 80%;
   display: flex;
@@ -879,14 +941,14 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-#items-portfolio img{
-  border-radius: 3%;
+.items-portfolio img{
+  /* border-radius: 3%; */
   width: 400px;
   height: 225px;
   text-align: center;
 }
-#items-portfolio video{
-  border-radius: 3%;
+.items-portfolio video{
+  /* border-radius: 3%; */
   width: 400px;
   height: 225px;
   text-align: center;
@@ -957,14 +1019,14 @@ a:hover {
 }
 
 
-#items-portfolio h3{
+.items-portfolio h3{
   line-height: 2.5;
 
   color: #fff !important;
   /* margin-top: 5%; */
   text-align: center;
 }
-#items-portfolio h4{
+.items-portfolio h4{
   font-weight: normal;
   color: #fff;
   text-align: center;

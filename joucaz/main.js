@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
 scrollingNext();
   // typing();
 //  phonePlay();
-  triPortfolio();
+  triPortfolio("items-portfolio-artist", "artist");
+  triPortfolio("items-portfolio-developer", "developer");
   //currentPage();
   
    
@@ -151,14 +152,14 @@ function scrollingNext() {
 
   // ----------------------- Sort all my project of the portfolio-----------------------
 
-function triPortfolio(){
+function triPortfolio(nameID, nameButton){
   var selectedClass = "";
-  var btnFil = document.querySelectorAll(".button-filter")
+  var btnFil = document.querySelectorAll(".button-filter-" + nameButton)
   for(var i=0;i<btnFil.length;i++) {
     btnFil[i].addEventListener('click',function(){
       selectedClass = "."+this.dataset.rel; 
-      var portfolio = document.querySelector("#items-portfolio");
-      var portfolioDiv = document.querySelectorAll(".all");
+      var portfolio = document.querySelector("#" + nameID);
+      var portfolioDiv = portfolio.querySelectorAll(".all");
       for(var j=0;j<portfolioDiv.length;j++) {
         portfolioDiv[j].style.display="none";
         var selectedDiv = portfolio.querySelectorAll(selectedClass)
@@ -170,6 +171,7 @@ function triPortfolio(){
     });
   }
 }
+
 
   // ----------------------- Make the effect of the first page good for phones -----------------------
 
