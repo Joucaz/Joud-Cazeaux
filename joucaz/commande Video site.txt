@@ -1,2 +1,0 @@
-ffmpeg -i ancienneVideo.mp4 -vf scale=640:-1 newVideo.mp4
-ffmpeg -i anciennePhoto.webp -vf scale=853:480 anciennePhotoSmall.webp
