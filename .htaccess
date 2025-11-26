@@ -1,3 +1,26 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www.joudcazeaux.fr 
 RewriteRule (.*) https://joudcazeaux.fr/$1 [R=301,L]
+
+# Redirections des pages
+Redirect 301 /en/ /profile/en/
+Redirect 301 /fr/ /profile/fr/
+Redirect 301 /joucaz/ /portfolio/
+
+# Redirections des PDFs
+Redirect 301 "/Docs/Joud CAZEAUX - Resume.pdf" "/profile/Docs/Joud CAZEAUX - Resume.pdf"
+Redirect 301 "/Docs/Joud CAZEAUX - CV.pdf" "/profile/Docs/Joud CAZEAUX - CV.pdf"
+Redirect 301 "/Docs/Joud CAZEAUX - CV sportif.pdf" "/profile/Docs/Joud CAZEAUX - CV sportif.pdf"
+
+# Noindex pour les PDFs
+<FilesMatch "Joud CAZEAUX - Resume\.pdf$">
+  Header set X-Robots-Tag "noindex"
+</FilesMatch>
+
+<FilesMatch "Joud CAZEAUX - CV\.pdf$">
+  Header set X-Robots-Tag "noindex"
+</FilesMatch>
+
+<FilesMatch "Joud CAZEAUX - CV sportif\.pdf$">
+  Header set X-Robots-Tag "noindex"
+</FilesMatch>
