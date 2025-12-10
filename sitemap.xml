@@ -5,15 +5,15 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://joudcazeaux.fr/profile/en</loc>
+    <loc>https://joudcazeaux.fr/profile/en/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joudcazeaux.fr/portfolio</loc>
+    <loc>https://joudcazeaux.fr/portfolio/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://joudcazeaux.fr/profile/fr</loc>
+    <loc>https://joudcazeaux.fr/profile/fr/</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
