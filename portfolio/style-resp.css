@@ -1,4 +1,5 @@
 /* PHONE PORTRAIT*/
+/* @media (max-width: 768px) */
 @media only screen 
   and (min-device-width: 350px) 
   and (max-device-width: 767px) 
@@ -103,14 +104,15 @@
       visibility: hidden;
     }
     #image-fixed{
-      padding: 8% 5% 2% 5%;
+      padding: 5% 12.5% 0 12.5%;
       display: flex;
-      max-width: 100%;
+      max-width: 75%;
       height: fit-content;
       position: relative;
       top: 3%;
       text-align: center;
       flex-direction: row;
+      z-index: 0;
     }
     .reseaux{
       width: 100%;
@@ -146,28 +148,23 @@
       margin-top: 3%;
       width: 90%;
     } */
-    #items-portfolio video{
-      width: 350px;
-      height: auto;
-    }
-    #items-portfolio img{
-      width: 350px;
-    height: 196.88px;
-    }
+    
     .overlay{
       position: fixed;
   }
   .popup{
     top: 5vh;
-      max-width: 80%;
-      height: 85%;
-      width: 80%;
+      max-width: 90%;
+      height: 90%;
+      width: 90%;
+      overflow: hidden;
   }
   .popup h2{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 8%;
+    font-size: 3em;
   }
   .flex-popup{
+    margin: 0;
       flex-direction: column;
   }
   .imgPopup{
@@ -175,17 +172,31 @@
       height: 60vw;
   }
   .popup .button {
+    padding: 5%;
       margin-bottom: 5%;
+      font-size: 2.5em !important;
+      margin: 8% 0 !important;
   }
   .popup .content{
-    margin-top: 5%;
-      max-height: 90%;
+      max-height: calc(85vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .centerPop {
+    padding-bottom: 10% !important;
   }
   .color-img {
     border: solid 2px;
     width: 6.5vh !important;
     height: 6.5vh !important;
     transition: linear 0.3s;
+}
+.right-popup {
+    font-size: 3em;
+    width: 94%;
+}
+.left-popup{
+  width: 100%;
 }
 .popup-flex-color{
   display: block;
@@ -201,6 +212,7 @@
     margin: 2%;
 }
   .popup video{
+    margin: 0;
     width: -webkit-fill-available !important;
   }
   .popup img{
@@ -215,14 +227,14 @@
   }
   .popup .close{
       top: 8px;
-      font-size: 40px;
+      font-size: 5em;
   }
   
   #divJoucazLogo{
-    margin: 3% 0% 5% 0%;
+    margin: 3% 0% 3% 0%;
   }
   #JoucazLogo {
-    width: 20%;
+    width: 15%;
   }
 
   .switch{
@@ -247,4 +259,109 @@
     gap: 15px;
   }
   
+  .items-portfolio {
+    margin-top: 0;
+      gap: 20px;
+    }
+    
+    .portfolio-item {
+      width: 100%;
+    }
+    
+    .items-portfolio video,
+    .items-portfolio img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .box {
+      width: 100%;
+    }
+    
+    .image-portfolio {
+      width: 100%;
+    }
+    .items-portfolio h3{
+      font-size: 3em;
+      line-height: 1.5;
+      font-weight: 400;
+      padding: 3% 5%;
+    }
+    .filter-system {
+      max-width: 100%;
+      margin: 0 5%;
+      padding: 0;
+    }
+
+    .quick-filters-row {
+      display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quick-label {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .controls-row {
+      margin: 0 0 5% 0;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .more-filters-toggle,
+    .reset-filters-btn,
+    .results-counter {
+        width: 100%;
+        justify-content: center;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .advanced-filters {
+        margin-top: 5%;
+        font-size: 1.5em;
+    }
+
+    .filter-row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .filter-row-title {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        font-size: 2em;
+    }
+
+    .filter-row-buttons {
+        width: 100%;
+        justify-content: left;
+    }
+
+    .filter-btn {
+      padding: 3%;
+      margin: 2% 3% 0 0;
+        font-size: 1.5em;
+        /* padding: 6px 12px; */
+    }
+
+    .preset-btn {
+        font-size: 0.8em;
+        padding: 7px 15px;
+    }
+    .search-input{
+      padding: 2% 2%;
+      width: 96%;
+      font-size: 2.5em;
+      margin: 0 0 5% 0;
+    }
+    .search-container{
+      margin-top: 0;
+    }
 }
+

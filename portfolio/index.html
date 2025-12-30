@@ -214,498 +214,609 @@
                     </a>
                 </div>
                 
-                <!-- <h1 id="h1-creations" class="titreaccueil" >Portfolio</h1> -->
-                <!-- <h2 id="h2-creations" class="soustitre">Don't hesitate to contact me for any 2D or 3D project !</h2> -->
-                
-                <div class="interuptor">
-                    <div>
-                        <h2 id="artistText" class="text-checked">
-                            <p style="color: #171617; display: inline; margin: 0; text-shadow: 0 0px 0px #171617;">j              </p>
-                            3D Artist
-                        </h2>
+                <!-- <h4 class="soustitre">Use filters to explore my work as a 3D Artist and Developer</h4> -->
+
+            
+                <div class="filter-system">
+    
+                    <!-- Quick Filters (1 ligne) -->
+                    <div class="quick-filters-row">
+                        <span class="quick-label">Quick Filters</span>
+                        <!-- <button class="filter-btn preset-btn active" data-preset="all">All</button> -->
+                        <button class="filter-btn preset-btn" data-preset="artist">🎨 3D Artist</button>
+                        <button class="filter-btn preset-btn" data-preset="developer">💻 Developer</button>
+                        <button class="filter-btn preset-btn" data-preset="rocket-league">🚗 Rocket League</button>
+                        <button class="filter-btn preset-btn" data-preset="website">🌐 Website</button>
+                        <button class="filter-btn preset-btn" data-preset="latest">🆕 Latest</button>
                     </div>
-                    <div>
-                        <label class="switch">
-                            <input type="checkbox" id="toggleSwitch"/>
-                            <div></div>
-                        </label>
+
+                    <!-- Controls Row (1 ligne) -->
+                    <div class="controls-row">
+                        <button class="more-filters-toggle" id="moreFiltersBtn">
+                            Filters <span class="toggle-icon">▼</span>
+                        </button>
+                        <button class="reset-filters-btn">Reset All</button>
+                        <div class="results-counter">
+                            <span id="resultsCount">0</span> projects
+                        </div>
                     </div>
-                    <div>
-                        <h2 id="devText">Developer</h2>
+
+                    <!-- Advanced Filters (Collapsible) -->
+                    <div class="advanced-filters" id="advancedFilters" style="display: none;">
+                        
+                        <!-- Role -->
+                        <div class="filter-row">
+                            <span class="filter-row-title">Role</span>
+                            <div class="filter-row-buttons">
+                                <button class="filter-btn active" data-filter="role" data-value="all">All</button>
+                                <button class="filter-btn" data-filter="role" data-value="artist">3D Artist</button>
+                                <button class="filter-btn" data-filter="role" data-value="developer">Developer</button>
+                            </div>
+                        </div>
+
+                        <!-- Category -->
+                        <div class="filter-row">
+                            <span class="filter-row-title">Category</span>
+                            <div class="filter-row-buttons">
+                                <button class="filter-btn active" data-filter="category" data-value="all">All</button>
+                                <button class="filter-btn" data-filter="category" data-value="3d-animation">3D Animation</button>
+                                <button class="filter-btn" data-filter="category" data-value="rl-decal">RL Decal</button>
+                                <button class="filter-btn" data-filter="category" data-value="game">Game</button>
+                                <button class="filter-btn" data-filter="category" data-value="website">Website</button>
+                                <button class="filter-btn" data-filter="category" data-value="addon">Addon</button>
+                            </div>
+                        </div>
+
+                        <!-- Game -->
+                        <div class="filter-row">
+                            <span class="filter-row-title">Game</span>
+                            <div class="filter-row-buttons">
+                                <button class="filter-btn active" data-filter="game" data-value="all">All</button>
+                                <button class="filter-btn" data-filter="game" data-value="rocket-league">Rocket League</button>
+                                <button class="filter-btn" data-filter="game" data-value="cs2">Counter-Strike</button>
+                                <button class="filter-btn" data-filter="game" data-value="valorant">Valorant</button>
+                            </div>
+                        </div>
+
+                        <!-- Sort -->
+                        <div class="filter-row">
+                            <span class="filter-row-title">Sort</span>
+                            <div class="filter-row-buttons">
+                                <button class="filter-btn active" data-filter="sort" data-value="popular">Popular</button>
+                                <button class="filter-btn" data-filter="sort" data-value="newest">Newest</button>
+                                <button class="filter-btn" data-filter="sort" data-value="oldest">Oldest</button>
+                            </div>
+                        </div>
+
                     </div>
-                    <script>
-                        $('.switch input').on('change', function(){
-                        var dad = $(this).parent();
-                        if($(this).is(':checked'))
-                            dad.addClass('switch-checked');
-                        else
-                            dad.removeClass('switch-checked');
-                        });
-                        $(document).ready(function () {
-                            $('#toggleSwitch').on('change', function () {
-                                var devText = $('#devText');
-                                var artistText = $('#artistText');
-                                if ($(this).is(':checked')) {
-                                    // Mode Developer
-                                    devText.addClass('text-checked');
-                                    artistText.removeClass('text-checked');
-                                    $('#developerContent').show();
-                                    $('#artistContent').hide();
-                                } else {
-                                    // Mode 3D Artist
-                                    artistText.addClass('text-checked');
-                                    devText.removeClass('text-checked');
-                                    $('#developerContent').hide();
-                                    $('#artistContent').show();
-                                }
-                            });
-                        });
-                    </script>      
+
+                    <!-- Search Bar (juste au-dessus des projets) -->
+                    <div class="search-container">
+                        <input type="text" id="quickSearch" placeholder="🔍 Search projects..." class="search-input">
+                    </div>
+
                 </div>
-                <h4 class="soustitre">Toggle the switch to view my projects as a 3D Artist or a Developer</h2>
-                   
-                    <div id="artistContent" style="display: block;">
-                        <div id="showreel" class="sec page full">
-                            <div class="image-portfolioShowreel boxShowreel" >
-                                <a href="Creations/Autres/Showreel/ShowreelJoucaz.mp4" target="_blank" style="text-decoration:none">
-                    
-                                    <iframe class="videoShowreel" height="267"
-                                    src="https://www.youtube.com/embed/KoE_1FwPLqI?autoplay=1&mute=1&loop=1&controls=1&modestbranding=1&rel=0&playlist=KoE_1FwPLqI" 
-                                    title="Showreel Joucaz" frameborder="0" 
-                                    allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    allowfullscreen></iframe>
-        
-                    
-                                    <h3 class="boxTitle">🎬 Showreel 3D 2023 - By Joucaz 🎬  </h3>
-                    
+
+                <!-- Portfolio Items -->
+                    <div id="items-portfolio-unified" class="slideInDown items-portfolio">
+                        
+                        <!-- Gentle M8 Alpine -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game="rocket-league"
+                             data-date="2024-01-13">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                                <span class="tag tag-game">Rocket League</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupGentleM8')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Decal/M8/M8DecalAnnouncementCaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Decal/M8/M8DecalAnnouncementSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">Gentle M8 Alpine - 3D Animation</h3>
                                 </a>
                             </div>
-                            <div class="image-portfolioShowreel boxShowreel" >
-                                <a href="Creations/Autres/Showreel/ShowreelJoucaz.mp4" target="_blank" style="text-decoration:none">
-                    
-                                    <iframe class="videoShowreel" height="267"
-                                    src="https://www.youtube.com/embed/ytPZXCiRPbI?autoplay=1&mute=1&loop=1&controls=1&modestbranding=1&rel=0&playlist=ytPZXCiRPbI" 
-                                    title="Showreel Joucaz" frameborder="0" 
-                                    allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                    allowfullscreen></iframe>
-                    
-                                    <h3 class="boxTitle">🎬 Showreel 3D 2022 - By Joucaz 🎬</h3>
-                    
+                        </div>
+
+                        <!-- Yalla Compass -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game="cs2"
+                             data-date="2024-07-24">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                                <span class="tag tag-game">CS2</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupYallaCompass')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/CSGO/YallaCompass/CaptureYallaCompassSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/CSGO/YallaCompass/YallaCompassTournamentAnnouncementSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">$1.5M CS2 Tournament Trailer</h3>
                                 </a>
                             </div>
-                            
-                            
-                        
-                        <br>
                         </div>
-        
-                         <div class="fade button-portfolio" id="button-portfolio">
-                            <div class="button-all" >
-                                <button class="button button-filter button-filter-artist" data-rel="all" style="text-decoration: none;">All</button>
-                            </div>
-                            <div class="button-3d" >
-                                <button class="button button-filter button-filter-artist" data-rel="trois" style="text-decoration: none;">3D Animation</button>
-                            </div>
-                            <!-- <div class="button-rl" >
-                                <button class="button button-filter button-filter-artist" data-rel="decal" style="text-decoration: none;">Rocket League</button>
-                            </div> -->
-                            <div class="button-decal" >
-                                <button class="button button-filter button-filter-artist" data-rel="decal" style="text-decoration: none;">RL Decal</button>
-                            </div>
-                            <!-- <div class="button-assets" >
-                                <button class="button button-filter button-filter-artist" data-rel="stream" style="text-decoration: none;">Stream Assets</button>
-                            </div> -->
-                            <!-- <div class="button-transitions" >
-                                <button class="button button-filter button-filter-artist" data-rel="transitions" style="text-decoration: none;">Transitions</button>
-                            </div> -->
-                            <!-- <div class="button-scenes" >
-                                <button class="button button-filter button-filter-artist" data-rel="scenes" style="text-decoration: none;">Scenes</button>
-                            </div>
-                            <div class="button-overlays" >
-                                <button class="button button-filter button-filter-artist" data-rel="overlays" style="text-decoration: none;">Overlays</button>
-                            </div> -->
-                           
-                            <!-- <div class="button-tel">
-                                <button class="button button-filter button-filter-artist" data-rel="autres" style="text-decoration: none;">Autres</button>
-                            </div> -->
-                            <div class="button-games" >
-                                <button class="button button-filter button-filter-artist" data-rel="game" style="text-decoration: none;">Games</button>
-                            </div>
-                            <!-- <div class="button-script" >
-                                <button class="button button-filter button-filter-artist" data-rel="script" style="text-decoration: none;">3D Addon/Script</button>
-                            </div> -->
-                            <!-- <div class="button-autres" >
-                                <button class="button button-filter button-filter-artist" data-rel="autres" style="text-decoration: none;">Other</button>
-                            </div> -->
-                            
-                            
-                            
-                         </div>
-        
-                         
-                         <div id="items-portfolio-artist" class=" slideInDown items-portfolio">
-                            
-                             
-                            <div class="fade slideTopPetit one-item all trois">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupGentleM8')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Creations/Decal/M8/M8DecalAnnouncementCaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Decal/M8/M8DecalAnnouncementSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">Gentle M8 Alpine - 3D Animation</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-        
-                             <div class="fade slideTopPetit one-item all trois">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupYallaCompass')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Creations/CSGO/YallaCompass/CaptureYallaCompassSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/CSGO/YallaCompass/YallaCompassTournamentAnnouncementSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">$1.5M CS2 Tournament Annoucement</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-        
-                             
-                             <div class="fade slideTopPetit one-item all autres game">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupZomBriCaz')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Creations/Autres/ZomBriCaz/ZomBriCazCoverSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Autres/ZomBriCaz/TrailerZomBriCazSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">ZomBriCaz 2024 - FPS Game</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-        
-                             
-                             <div class="fade slideTopPetit one-item all trois">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupKaydop')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Creations/Decal/Kaydop/KaydopCapture.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="./Creations/Decal/Kaydop/KaydopMarcelSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">🐐 Kaydop 🐐 - 3D Animation</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-        
-                             <div class="fade slideTopPetit one-item all trois">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupJordan1')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Capture/AJ1Capture.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Autres/Jordan1/AirJordan1CutSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">Air Jordan 1 - 3D Animation</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-                             
-                             <div class="fade slideTopPetit one-item all trois">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupOmenProdigy')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Creations/Valorant/ProdigyAgency/OmenProdigyAgencyCapture.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Valorant/ProdigyAgency/OmenProdigyAgencyCutSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">Omen X Prodigy Agency</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-                             <div class="fade slideTopPetit one-item all trois">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupIntroAlphas')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Capture/AlphasIntroCapture.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Autres/Alphas/AlphasFinishCutSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">Intro Twitch - Alphas</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-        
-                            <div class="fade slideTopPetit one-item all trois">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupChaletFufu')" style="text-decoration:none" >
-        
-                                        <video class="videoCrea" poster="Capture/ChaletFufuCapture.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Autres/Fufu/ChaletFufuSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">Mountain Chalet - Fufu</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-                             
-                             <div class="fade slideTopPetit one-item all trois decal">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupTeamVitality')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Creations/Decal/Vitality/CaptureNormal.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Decal/Vitality/TeamVitalityWorldsDecalCutSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">Decal Team Vitality - 3D Animation</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-                             <div class="fade slideTopPetit one-item all decal">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupBMW')" style="text-decoration:none">
-                                        <img src="Creations/Decal/BMW/BMWJoucazSmall.webp" style="object-fit: contain;" alt="BRL X BMW Decal Contest Joucaz" >
-                                        <h3 class="boxTitle">RL X BMW Decal Contest</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-                             <div class="fade slideTopPetit one-item all decal">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupKcorpDecal')" style="text-decoration:none">
-                                    <!-- <a href="Creations/Decal/Kcorp/KcorpDecal1.png" style="text-decoration:none" target="_blank"> -->
-                                        <img src="Creations/Decal/Kcorp/KcorpDecal1.webp" style="object-fit: contain;" alt="Decal RL Karmine Corp" >
-                                        <h3 class="boxTitle">Decal RL Karmine Corp</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-                             
-                             <div class="fade slideTopPetit one-item all decal">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupSolaryDecal')" style="text-decoration:none">
-                                    <!-- <a href="Creations/Decal/Solary/DecalSolarySemi.png" style="text-decoration:none" target="_blank"> -->
-                                        <img src="Creations/Decal/Solary/DecalSolarySemi.webp" style="object-fit: contain;" alt="Decal RL Solary" >
-                                        <h3 class="boxTitle">Decal RL Solary</h3>
-                                    </a>
-                                </div>
-                             </div> 
-        
-                             <!-- <div class="fade slideTopPetit one-item all trois decal">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupRLDecal')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Capture/CaptureRL.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Decal/DecalPresentation/RLDecalPresentationCutSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">Decal Rocket League - 3D Animation</h3>
-        
-                                    </a>
-                                </div>
-                             </div>  -->
-        
-                             <div class="fade slideTopPetit one-item all trois stream">
-                                <div class="image-portfolio box" >
-                                    <a href="Creations/Autres/Alphas/AlphasFond.png" style="text-decoration:none" target="_blank">
-                                        <img src="Creations/Autres/Alphas/AlphasFondSmall.webp" style="object-fit: contain;" alt="Gaming room Alphas" >
-                                        <h3 class="boxTitle">Gaming Room - Alphas</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-        
-                             <div class="fade slideTopPetit one-item all decal">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupKaokorDecal')" style="text-decoration:none">
-                                    <!-- <a href="Creations/Decal/Solary/DecalSolarySemi.png" style="text-decoration:none" target="_blank"> -->
-                                        <img src="Creations/Decal/Kaokor/DecalKaokorSmall.webp" style="object-fit: contain;" alt="Decal RL Solary" >
-                                        <h3 class="boxTitle">Decal RL Kaokor</h3>
-                                    </a>
-                                </div>
-                             </div> 
-        
-                             <div class="fade slideTopPetit one-item all decal">
-                                <div class="image-portfolio box" >
-                                    <a href="Creations/Decal/OL/RLDecalOL.png" style="text-decoration:none">
-                                    <!-- <a href="Creations/Decal/Solary/DecalSolarySemi.png" style="text-decoration:none" target="_blank"> -->
-                                        <img src="Creations/Decal/OL/RLDecalOLSmall.webp" style="object-fit: contain;" alt="Decal RL OL" >
-                                        <h3 class="boxTitle">Decal RL OL</h3>
-                                    </a>
-                                </div>
-                             </div> 
-                            
-                            <div class="fade slideTopPetit one-item all trois">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupPokerskills')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Capture/CapturePokerSkills.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Autres/PokerSkills/PokerSkillsAnnonceCutSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">PokerSkills Announce</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-                             
-                             <div class="fade slideTopPetit one-item all decal">
-                                <div class="image-portfolio box" >
-                                    <a href="Creations/Decal/Sentinel/DecalSentinel.png" style="text-decoration:none" target="_blank">
-                                        <img src="Creations/Decal/Sentinel/DecalSentinelSmall.webp" style="object-fit: contain;" alt="decal sentinel esport" >
-                                        <h3 class="boxTitle">Decal RL Sentinel Esport</h3>
 
-                                    </a>                                 
-                                </div>
-                             </div> 
-
-                            <!-- ------------- POPUP ------------------ -->
-
-                            <script>
-                                
-                                
-                                // const output = document.querySelector(".output");
-                        
-                                // scrollDemo.addEventListener("scroll", event => {
-                                //     output.innerHTML = `scrollTop: ${scrollDemo.scrollTop} <br>
-                                //                         scrollLeft: ${scrollDemo.scrollLeft} `;
-                                // }, { passive: true });
-                        
-                            </script>
-
-        
-        
-                         </div>
-                                     
-                            
+                        <!-- CustomUI Plugin -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="developer" 
+                             data-category="addon" 
+                             data-game="rocket-league"
+                             data-date="2025-01-04">
+                            <div class="item-tags">
+                                <span class="tag tag-developer">Developer</span>
+                                <span class="tag tag-addon">Addon</span>
+                                <span class="tag tag-game">Rocket League</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupCustomUI')" style="text-decoration:none">
+                                    <img src="Creations/Plugins/CustomUI/MiniaCustomUISmall.webp" style="object-fit: contain;">
+                                    <h3 class="boxTitle">CustomUI - Rocket League Plugin</h3>
+                                </a>
+                            </div>
                         </div>
-                    
-                    <div id="developerContent" style="display: none;">
-
-                        <div class="fade button-portfolio button-developer" id="button-portfolio">
-                            <div class="button-all" >
-                                <button class="button button-filter button-filter-developer" data-rel="all" style="text-decoration: none;">All</button>
+                        
+                        <!-- RL Viewer -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="developer" 
+                             data-category="website" 
+                             data-game="rocket-league"
+                             data-date="2025-12-22">
+                            <div class="item-tags">
+                                <span class="tag tag-developer">Developer</span>
+                                <span class="tag tag-website">Website</span>
                             </div>
-                            <div class="button-website" >
-                                <button class="button button-filter button-filter-developer" data-rel="website" style="text-decoration: none;">Website</button>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupRLViewerWebsite')" style="text-decoration:none">
+                                    <img src="Creations/Website/RLViewer/RLViewerCaptureSmall.webp" style="object-fit: contain;">
+                                    <h3 class="boxTitle">Rocket League Customizer</h3>
+                                </a>
                             </div>
-                            <div class="button-games" >
-                                <button class="button button-filter button-filter-developer" data-rel="game" style="text-decoration: none;">Games</button>
+                        </div>
+
+                        <!-- PlayerForge Announcement -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game="cs2"
+                             data-date="2024-11-18">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                                <span class="tag tag-game">CS2</span>
                             </div>
-                            <div class="button-addons" >
-                                <button class="button button-filter button-filter-developer" data-rel="addons" style="text-decoration: none;">Addons</button>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupPlayerForge')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/CSGO/PlayerForge/PlayerForgeCaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/CSGO/PlayerForge/PlayerForgeAnnouncementSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">Player Forge 3D Trailer</h3>
+                                </a>
                             </div>
-                            
-                            
-                            
-                         </div>
+                        </div>
 
-                        <div id="items-portfolio-developer" class=" slideInDown items-portfolio">
+                        <!-- ZomBriCaz -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="developer" 
+                             data-category="game" 
+                             data-game=""
+                             data-date="2024-03-07">
+                            <div class="item-tags">
+                                <span class="tag tag-developer">Developer</span>
+                                <span class="tag tag-game">Game</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupZomBriCaz')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Autres/ZomBriCaz/ZomBriCazCoverSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Autres/ZomBriCaz/TrailerZomBriCazSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">ZomBriCaz 2024 - FPS Game</h3>
+                                </a>
+                            </div>
+                        </div>
 
-                            <div class="fade slideTopPetit one-item all game addons">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupCustomUI')" style="text-decoration:none">
-                                        <img src="Creations/Plugins/CustomUI/MiniaCustomUISmall.webp" style="object-fit: contain;" >
-                                        <h3 class="boxTitle">CustomUI - Rocket League Plugin</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
+                        <!-- Kaydop -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game="rocket-league"
+                             data-date="2023-10-06  ">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                                <span class="tag tag-game">Rocket League</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupKaydop')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Decal/Kaydop/KaydopCapture.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="./Creations/Decal/Kaydop/KaydopMarcelSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">🐐 Kaydop 🐐 - 3D Animation</h3>
+                                </a>
+                            </div>
+                        </div>
 
-                            <div class="fade slideTopPetit one-item all game">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupZomBriCaz')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Creations/Autres/ZomBriCaz/ZomBriCazCoverSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Autres/ZomBriCaz/TrailerZomBriCazSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">ZomBriCaz 2024 - FPS Game</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
+                        <!-- Air Jordan 1 -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game=""
+                             data-date="2023-01-30">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupJordan1')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Capture/AJ1Capture.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Autres/Jordan1/AirJordan1CutSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">Air Jordan 1 - 3D Animation</h3>
+                                </a>
+                            </div>
+                        </div>
 
-                             <div class="fade slideTopPetit one-item all addons">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupEasyLifeRender')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Creations/Script/EasyLifeRender/EasyLifeRenderCaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Script/EasyLifeRender/EasyLifeRenderVideoSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">EasyLifeRender Addon</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
-                             <div class="fade slideTopPetit one-item all website">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupRocketYota')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Creations/Website/RocketYota/RYWebsiteCaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Website/RocketYota/RocketYotaWebsiteVideoSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">Rocket Yota - Website</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
+                        <!-- Omen Prodigy -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game="valorant"
+                             data-date="2023-07-19">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                                <span class="tag tag-game">Valorant</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupOmenProdigy')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Valorant/ProdigyAgency/OmenProdigyAgencyCapture.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Valorant/ProdigyAgency/OmenProdigyAgencyCutSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">Omen X Prodigy Agency</h3>
+                                </a>
+                            </div>
+                        </div>
 
-                             <div class="fade slideTopPetit one-item all website">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupICONWebsite')" style="text-decoration:none">
-                                        <img src="Creations/Website/ICON/ICONWebsiteJoucazSmall.webp" style="object-fit: contain;" >
-                                        <h3 class="boxTitle">ICON Photonics - Website</h3>
-        
-                                        <!-- <video class="videoCrea" poster="Creations/Website/" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Website/RocketYota/RocketYotaWebsiteVideoSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">ICON Photonics - Website</h3>
-         -->
-                                    </a>
-                                </div>
-                             </div> 
+                        <!-- EasyLifeRender Addon -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="developer" 
+                             data-category="addon" 
+                             data-game=""
+                             data-date="2024-11-20">
+                            <div class="item-tags">
+                                <span class="tag tag-developer">Developer</span>
+                                <span class="tag tag-addon">Addon</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupEasyLifeRender')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Script/EasyLifeRender/EasyLifeRenderCaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Script/EasyLifeRender/EasyLifeRenderVideoSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">EasyLifeRender Addon</h3>
+                                </a>
+                            </div>
+                        </div>
 
-                             <div class="fade slideTopPetit one-item all website">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupJCWebsite')" style="text-decoration:none">
-                                        <img src="Creations/Website/JC/JCWebsiteSmall.webp" style="object-fit: contain;" >
-                                        <h3 class="boxTitle">Immersive 3D Web Experience</h3>
-        
-                                        <!-- <video class="videoCrea" poster="Creations/Website/" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Website/RocketYota/RocketYotaWebsiteVideoSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">ICON Photonics - Website</h3>
-         -->
-                                    </a>
-                                </div>
-                             </div> 
+                        <!-- JC Website -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="developer" 
+                             data-category="website" 
+                             data-game=""
+                             data-date="2025-11-25">
+                            <div class="item-tags">
+                                <span class="tag tag-developer">Developer</span>
+                                <span class="tag tag-website">Website</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupJCWebsite')" style="text-decoration:none">
+                                    <img src="Creations/Website/JC/JCWebsiteSmall.webp" style="object-fit: contain;">
+                                    <h3 class="boxTitle">Immersive 3D Web Experience</h3>
+                                </a>
+                            </div>
+                        </div>
 
-                             
-                             <div class="fade slideTopPetit one-item all addons">
-                                <div class="image-portfolio box" >
-                                    <a onclick="openPopup('popupSortHierarchy')" style="text-decoration:none">
-        
-                                        <video class="videoCrea" poster="Creations/Script/SortHierarchy/SortHierarchyCaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();" >
-                                            <source src="Creations/Script/SortHierarchy/SortHierarchyVideoSmall.mp4" type="video/mp4">
-                                        </video>
-                                        <h3 class="boxTitle">SortHierarchy Script</h3>
-        
-                                    </a>
-                                </div>
-                             </div> 
+                        <!-- Team Vitality Decal -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="rl-decal" 
+                             data-game="rocket-league"
+                             data-date="2023-08-04">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-decal">RL Decal</span>
+                                <span class="tag tag-game">Rocket League</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupTeamVitality')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Decal/Vitality/CaptureNormal.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Decal/Vitality/TeamVitalityWorldsDecalCutSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">Decal Team Vitality - 3D Animation</h3>
+                                </a>
+                            </div>
+                        </div>
 
-                             <div class="fade slideTopPetit one-item all website">
-                                <div class="image-portfolio box" >
-                                    <a href="https://schedulejs.com/en/" style="text-decoration:none" target="_blank">
-                                        <img src="Creations/Website/ScheduleJS/ScheduleJSCaptureSmall.webp" style="object-fit: contain;" alt="Decal RL OL" >
-                                        <h3 class="boxTitle">ScheduleJS - Website</h3>
-                                    </a>
-                                </div>
-                             </div> 
+                        <!-- BMW Decal -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="rl-decal" 
+                             data-game="rocket-league"
+                             data-date="2024-08-30">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-decal">RL Decal</span>
+                                <span class="tag tag-game">Rocket League</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupBMW')" style="text-decoration:none">
+                                    <img src="Creations/Decal/BMW/BMWJoucazSmall.webp" style="object-fit: contain;" alt="BRL X BMW Decal Contest Joucaz">
+                                    <h3 class="boxTitle">RL X BMW Decal Contest</h3>
+                                </a>
+                            </div>
+                        </div>
 
+
+                        <!-- Showreel 2023 -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game=""
+                             data-date="2023-12-31">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a href="https://www.youtube.com/watch?v=KoE_1FwPLqI" target="_blank" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Autres/Showreel2023/Showreel2023CaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Autres/Showreel2023/Showreel2023Small.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">Showreel 3D 2023 - Joucaz</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Intro Alphas -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game=""
+                             data-date="2022-11-07">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupIntroAlphas')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Capture/AlphasIntroCapture.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Autres/Alphas/AlphasFinishCutSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">Intro Twitch - Alphas</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ICON Website -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="developer" 
+                             data-category="website" 
+                             data-game=""
+                             data-date="2025-08-05">
+                            <div class="item-tags">
+                                <span class="tag tag-developer">Developer</span>
+                                <span class="tag tag-website">Website</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupICONWebsite')" style="text-decoration:none">
+                                    <img src="Creations/Website/ICON/ICONWebsiteJoucazSmall.webp" style="object-fit: contain;">
+                                    <h3 class="boxTitle">ICON Photonics - Website</h3>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!-- Kcorp Decal -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="rl-decal" 
+                             data-game="rocket-league"
+                             data-date="2023-05-06">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-decal">RL Decal</span>
+                                <span class="tag tag-game">Rocket League</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupKcorpDecal')" style="text-decoration:none">
+                                    <img src="Creations/Decal/Kcorp/KcorpDecal1.webp" style="object-fit: contain;" alt="Decal RL Karmine Corp">
+                                    <h3 class="boxTitle">Decal RL Karmine Corp</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Solary Decal -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="rl-decal" 
+                             data-game="rocket-league"
+                             data-date="2023-05-11">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-decal">RL Decal</span>
+                                <span class="tag tag-game">Rocket League</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupSolaryDecal')" style="text-decoration:none">
+                                    <img src="Creations/Decal/Solary/DecalSolarySemi.webp" style="object-fit: contain;" alt="Decal RL Solary">
+                                    <h3 class="boxTitle">Decal RL Solary</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Showreel 2022 -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game=""
+                             data-date="2022-12-31">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a href="https://www.youtube.com/watch?v=ytPZXCiRPbI" target="_blank" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Autres/Showreel2022/Showreel2022CaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Autres/Showreel2022/Showreel2022Small.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">Showreel 3D 2022 - Joucaz</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Rocket Yota Website -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="developer" 
+                             data-category="website" 
+                             data-game="rocket-league"
+                             data-date="2025-07-04">
+                            <div class="item-tags">
+                                <span class="tag tag-developer">Developer</span>
+                                <span class="tag tag-website">Website</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupRocketYota')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Website/RocketYota/RYWebsiteCaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Website/RocketYota/RocketYotaWebsiteVideoSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">Rocket Yota - Website</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- SortHierarchy Script -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="developer" 
+                             data-category="addon" 
+                             data-game=""
+                             data-date="2024-09-17">
+                            <div class="item-tags">
+                                <span class="tag tag-developer">Developer</span>
+                                <span class="tag tag-addon">Addon</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupSortHierarchy')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Script/SortHierarchy/SortHierarchyCaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Script/SortHierarchy/SortHierarchyVideoSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">SortHierarchy Script</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Chalet Fufu -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game=""
+                             data-date="2022-12-28">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupChaletFufu')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Creations/Autres/Fufu/FufuCaptureSmall.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Autres/Fufu/ChaletFufuSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">Mountain Chalet - Fufu</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Kaokor Decal -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="rl-decal" 
+                             data-game="rocket-league"
+                             data-date="2023-11-01">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-decal">RL Decal</span>
+                                <span class="tag tag-game">Rocket League</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupKaokorDecal')" style="text-decoration:none">
+                                    <img src="Creations/Decal/Kaokor/DecalKaokorSmall.webp" style="object-fit: contain;" alt="Decal RL Kaokor">
+                                    <h3 class="boxTitle">Decal RL Kaokor</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- OL Decal -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="rl-decal" 
+                             data-game="rocket-league"
+                             data-date="2023-05-31">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-decal">RL Decal</span>
+                                <span class="tag tag-game">Rocket League</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a href="Creations/Decal/OL/RLDecalOL.png" style="text-decoration:none" target="_blank">
+                                    <img src="Creations/Decal/OL/RLDecalOLSmall.webp" style="object-fit: contain;" alt="Decal RL OL">
+                                    <h3 class="boxTitle">Decal RL OL</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Pokerskills -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="3d-animation" 
+                             data-game=""
+                             data-date="2022-11-25">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-3d">3D Animation</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a onclick="openPopup('popupPokerskills')" style="text-decoration:none">
+                                    <video class="videoCrea" poster="Capture/CapturePokerSkills.webp" playsinline muted="" loop="" onmouseover="this.play()" onmouseout="this.pause();">
+                                        <source src="Creations/Autres/PokerSkills/PokerSkillsAnnonceCutSmall.mp4" type="video/mp4">
+                                    </video>
+                                    <h3 class="boxTitle">PokerSkills Announce</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Sentinel Decal -->
+                        <div class="portfolio-item fade slideTopPetit" 
+                             data-role="artist" 
+                             data-category="rl-decal" 
+                             data-game="rocket-league"
+                             data-date="2022-12-15">
+                            <div class="item-tags">
+                                <span class="tag tag-artist">3D Artist</span>
+                                <span class="tag tag-decal">RL Decal</span>
+                                <span class="tag tag-game">Rocket League</span>
+                            </div>
+                            <div class="image-portfolio box">
+                                <a href="Creations/Decal/Sentinel/DecalSentinel.png" style="text-decoration:none" target="_blank">
+                                    <img src="Creations/Decal/Sentinel/DecalSentinelSmall.webp" style="object-fit: contain;" alt="decal sentinel esport">
+                                    <h3 class="boxTitle">Decal RL Sentinel Esport</h3>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
+                
 
                 </div>
                     
@@ -807,6 +918,39 @@
                                             <strong>WordPress</strong>  |  <strong>JavaScript</strong> |  <strong>2025</strong>
                                         </div>
                 
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="popupRLViewerWebsite" class="overlay">
+                        <div class="popup">
+                            <h2>Rocket League Customizer - ThreeJS</h2>
+                            <a class="close" href="#" onclick="closePopup('popupRLViewerWebsite')">&times;</a>
+                            <div class="content">
+                                <div class="flex-popup">
+                                    <div class="left-popup">
+                                        <img src="./Creations/Website/RLViewer/RLViewerCaptureSmall.webp" alt="Joud Cazeaux website">
+                                        <a href="https://rlviewer.joudcazeaux.fr" target="_blank">
+                                            <button class="button" style="text-decoration: none; font-size: 1em;margin-top: 3%;">Visit the 3D website</button>
+                                        </a>
+                                    </div>
+                                    <div class="right-popup">
+                                        Interactive 3D Rocket League car customizer
+                                        <br><br>
+                                        🚗 View Fennec, Octane & Dominus in real-time 3D<br>
+                                        🎨 Customize paints, finishes, wheels & textures<br>
+                                        ✨ Upload your own custom decals<br>
+                                        📋 Export BakkesMod codes
+                                        <br><br>
+                                        Test the customizer and drop your screenshots of your custom cars !
+                                        <br><br>
+
+                                        <div class="centerPop">
+                                            <strong>ThreeJS</strong>  |  <strong>JavaScript</strong> |  <strong>2025</strong>
+                                        </div>
                                     </div>
                                 </div>
                                 
@@ -1101,7 +1245,6 @@
                                         </a>
                                     </div>
                                     <div class="right-popup">
-                                        <br><br>
                                         Alphas is a Twitch streamer and needed a new start screen for his live.
                                         <br><br>
                                         In the continuity of the 3D scene that I already create for him, I wished to realize an epic animation of the logo.
@@ -1139,7 +1282,6 @@
                                         </a>
                                     </div>
                                     <div class="right-popup">
-                                        <br><br>
                                         Kaydop is a renowned French streamer and accomplished Rocket League professional. 
                                         <br><br>
                                         With an outstanding record of three World Championship victories during RLCS seasons 4, 5, and 7, he has solidified his status as a true legend in the game.
@@ -1175,7 +1317,6 @@
                                         </a>
                                     </div>
                                     <div class="right-popup">
-                                        <br><br>
                                         Gentle M8 is a recently established French esports team founded by three influencers: Gotaga, Brawks, and Squeezie.
                                         <br><br>
                                         They have entered the esports scene with the mission of breaking the traditional gaming norms.
@@ -1197,7 +1338,7 @@
                     </div>
                     <div id="popupYallaCompass" class="overlay">
                         <div class="popup">
-                            <h2>$1.5M CS2 Yalla Compass Tournament Annoucement</h2>
+                            <h2>$1.5M CS2 Yalla Compass Tournament Trailer</h2>
                             <a class="close" href="#" onclick="closePopup('popupYallaCompass')">&times;</a>
                             <div class="content">
                                 <div class="flex-popup">
@@ -1211,7 +1352,6 @@
                                         </a>
                                     </div>
                                     <div class="right-popup">
-                                        <br><br>
                                         Yalla Esport is a gaming and esports agency.
                                         <br><br>
                                         They organize a CS2 tournamenent in 2025 with a $1.5M cashprize.
@@ -1232,6 +1372,41 @@
                         </div>
                     </div>
                 
+                    <div id="popupPlayerForge" class="overlay">
+                        <div class="popup">
+                            <h2>Player Forge 3D Trailer</h2>
+                            <a class="close" href="#" onclick="closePopup('popupPlayerForge')">&times;</a>
+                            <div class="content">
+                                <div class="flex-popup">
+                                    <div class="left-popup">
+                                        <video autoplay loop muted id="videoICON">
+                                            <source src="./Creations/CSGO/PlayerForge/PlayerForgeAnnouncementSmall.mp4" type="video/mp4">
+                                            Votre navigateur ne prend pas en charge la vidéo HTML.
+                                        </video> 
+                                        <a href="./Creations/CSGO/PlayerForge/PlayerForgeAnnouncement.mp4" target="_blank">
+                                            <button class="button" style="text-decoration: none; font-size: 1em;margin-top: 3%;">Full video</button>
+                                        </a>
+                                    </div>
+                                    <div class="right-popup">
+                                        PlayerForge is the first platform that aims to provide opportunities to all gamers, from beginners to seasoned veterans, to learn, earn, and share their passion for gaming.
+                                        <br><br>
+                                        Built around the CS2 ecosystem, PlayerForge focuses on community, competition, and growth.
+                                        <br><br>
+                                        I’m proud to have created and produced the 3D visuals for the announcement of PlayerForge 🚀
+                                        <br><br>
+                                        <div class="centerPop">
+                                            <strong>Blender</strong>  |  <strong>2024</strong>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <!-- <a href="https://www.behance.net/gallery/177286545/Team-Vitality-Wolds-RLCS-2023" target="_blank">
+                                    <button class="button" style="text-decoration: none; font-size: 1em;">Behance of this project</button>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
                     
                     <div id="popupOmenProdigy" class="overlay">
                         <div class="popup">
@@ -1249,7 +1424,6 @@
                                         </a>
                                     </div>
                                     <div class="right-popup">
-                                        <br><br>
                                         Prodigy Agency represents professional esports players across multiple games, including Rocket League, Valorant, and League of Legends.
                                         <br><br>
                                         I made a video about the character Omen from the game Valorant, in which he takes on the dimension of a photo model and his outfit changes in honor of the agency.
@@ -1284,7 +1458,6 @@
                                         </a>
                                     </div>
                                     <div class="right-popup">
-                                        <br><br>
                                         Team Vitality is one of the most iconic french esport team.
                                         <br><br>
                                         During the last split, they won every tournament they took part in. I decided to create a new decal to celebrate all these victories.                        
@@ -1523,7 +1696,6 @@
                                         </a>
                                     </div>
                                     <div class="right-popup">
-                                        <br><br>
                                         Kaokor is a French content creator with 500k followers on TikTok.
                                         <br><br>
                                         He produces content on various games, with a particular focus on Rocket League.
@@ -1566,7 +1738,6 @@
                                         </a>
                                     </div>
                                     <div class="right-popup">
-                                        <br><br>
                                         PokerSkills is mainly a professional coach in Poker, he is doing this on Twitch and also had a website with a formation : pokerskills.fr
                                         <br><br>
                                         After a long break, he needed a video intro to announce his comeback.                                               
@@ -1936,7 +2107,8 @@
             //     });
             
                 </script>
-                    <script src="main.js"></script>
+                <script src="filterSystem.js"></script>
+                <script src="main.js"></script>
 
                 </div>
 
