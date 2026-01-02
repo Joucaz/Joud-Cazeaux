@@ -32,7 +32,7 @@ function scrollingNext() {
     
     let j = event.target
     var k = j.closest(".page")
-    console.log(k);
+    // console.log(k);
     var e = "#" + k.id
     if(k.id == 'showreel'){
       $(aContact).removeClass("active");

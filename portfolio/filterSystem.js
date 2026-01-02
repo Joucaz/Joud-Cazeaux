@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Réaffiche tous les items (annule le filtre de recherche)
         const allItems = document.querySelectorAll('.portfolio-item');
         allItems.forEach(item => {
-            item.style.display = 'block';
+            // item.style.display = 'block';
             item.classList.remove('hidden');
         });
 
@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const itemRole = item.getAttribute('data-role');
             const itemCategory = item.getAttribute('data-category');
             const itemGame = item.getAttribute('data-game');
-
+            // console.log(filterState)
             // Check if item matches all active filters
             const roleMatch = filterState.role === 'all' || itemRole === filterState.role;
             const categoryMatch = filterState.category === 'all' || itemCategory === filterState.category;
